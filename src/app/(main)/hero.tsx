@@ -6,7 +6,7 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 
 export default function Hero() {
   return (
-    <section>
+    <section className="pb-0 lg:pb-16">
       <div className="wrapper grid grid-cols-1 lg:grid-cols-12">
         <div className="flex flex-col col-span-1 lg:col-span-7">
           <div className="bg-[#F9F9F9] px-5 lg:px-10 py-8 lg:pt-16 lg:pb-36 border-b-4 border-white">
@@ -30,7 +30,7 @@ export default function Hero() {
             </div>
             <div className="col-span-1 lg:col-span-3 bg-[#F9F9F9] py-6 lg:pb-16 px-5 lg:px-6 border-t-4 lg:border-t-0 lg:border-l-4 border-white flex flex-col justify-end">
               <button className="text-start flex items-center gap-1 hover:underline cursor-pointer">
-                <span className="lg:max-w-[120px] text-[#3A3A3F] section-description-semi">
+                <span className="lg:max-w-[120px] text-[#3A3A3F] small-text-medium ">
                   See What We Build
                 </span>
                 <FaLongArrowAltRight className="text-2xl" />
