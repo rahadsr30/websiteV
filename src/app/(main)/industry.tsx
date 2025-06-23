@@ -52,7 +52,7 @@ export default function Industry() {
     <section className="bg-white py-20">
       <div>
         <div className="mb-12 flex flex-wrap items-start justify-between gap-4 wrapper">
-          <h2 className="section-title-medium">
+          <h2 className="section-title-medium text-[#0A0A0B]">
             One Engine. Any <br /> Industry.
           </h2>
           <Button className="mt-3 md:mt-0">Explore Industries</Button>

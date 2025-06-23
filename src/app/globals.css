@@ -31,6 +31,9 @@
   .card-title {
     @apply text-lg font-medium md:text-2xl;
   }
+  .card-title-lg {
+    @apply text-lg font-medium md:text-2xl lg:text-[32px];
+  }
 
   .wrapper {
     @apply mx-auto w-full max-w-[1320px] px-4 sm:px-6 lg:px-8;
