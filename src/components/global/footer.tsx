@@ -127,7 +127,7 @@ export default function Footer() {
                   <li key={link.name}>
                     <Link
                       href={link.href}
-                      className="text-[#82848E] hover:text-white card-title"
+                      className="text-[#E5E6E8] hover:text-white small-text"
                     >
                       {link.name}
                     </Link>
@@ -165,10 +165,10 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   key={link.name}
                   onClick={() => setActiveLink(link.name)}
-                  className={`text-2xl font-semibold transition-colors duration-200 ${
+                  className={`card-title transition-colors duration-200 ${
                     activeLink === link.name
                       ? "text-white"
-                      : "text-[#ACADB4] hover:text-white"
+                      : "text-[#82848E] hover:text-white"
                   }`}
                 >
                   {link.name}
