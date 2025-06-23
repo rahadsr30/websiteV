@@ -13,12 +13,12 @@ const navLinks = [
   { href: "/more", label: "More", dropdown: true },
 ];
 
-export default function Navbar() {
+export  function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 w-full bg-white  z-50">
-      <nav className="wrapper py-6 flex items-center justify-between">
+    <header className="w-full bg-white">
+      <nav className="wrapper py-6 flex items-center justify-between border-b border-[#ACADB4]">
         <div className="flex items-center">
           <Link href="/">
             <Image src="/logo.svg" alt="Vsenk Logo" width={120} height={48} />

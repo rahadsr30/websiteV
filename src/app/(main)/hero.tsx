@@ -11,14 +11,14 @@ export default function Hero() {
         <div className="flex flex-col col-span-1 lg:col-span-7">
           <div className="bg-[#F9F9F9] px-8 py-10 lg:pt-16 lg:pb-36 border-b-4 border-white">
             <h1 className="text-[#0A0A0B] section-title">
-              We are an AI Automation Development Agency That Does the Work
+              AI That Does the Work
             </h1>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-12">
             <div className="col-span-1 lg:col-span-9">
               <div className="bg-[#F9F9F9] px-10 py-8 lg:py-16">
                 <p className="text-[#3A3A3F] section-description">
-                  You don&apos;t need more tools. You need fewer problems. Vsenk
+                  You don’t need more tools. You need fewer problems. Vsenk
                   builds AI systems that actually solve problems, so your team
                   works smarter, and your business scales faster.
                 </p>

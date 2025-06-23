@@ -1,9 +1,10 @@
 "use client";
 import { MdEmail } from "react-icons/md";
-import Link from "next/link";
-import Logo from "./logo";
+import { Logo } from "./logo";
 import { FaPhoneAlt } from "react-icons/fa";
 import { useState } from "react";
+import Link from "next/link";
+
 const links = [
   { name: "Facebook", href: "https://www.facebook.com" },
   { name: "Twitter", href: "https://www.twitter.com" },
@@ -53,7 +54,7 @@ const locations = [
   },
 ];
 
-export default function Footer() {
+export function Footer() {
   const [buttonText, setButtonText] = useState("Copy Email");
   const [activeLink, setActiveLink] = useState(links[0].name);
 

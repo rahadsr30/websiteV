@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function logo() {
+export function Logo() {
   return (
     <div>
       <svg
