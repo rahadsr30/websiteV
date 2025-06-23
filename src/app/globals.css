@@ -9,14 +9,24 @@
   .section-description {
     @apply text-base font-normal md:text-lg leading-4 md:leading-5 lg:leading-7;
   }
+  .section-description-medium {
+    @apply text-base font-medium md:text-lg leading-4 md:leading-5 lg:leading-7;
+  }
   .section-description-semi {
     @apply text-base font-semibold md:text-lg leading-4 md:leading-5 lg:leading-7;
   }
+  .small-text {
+    @apply text-sm font-normal md:text-base leading-4 md:leading-5 lg:leading-7;
+  }
+  .small-text-medium {
+    @apply text-sm font-medium md:text-base leading-4 md:leading-5 lg:leading-7;
+  }
+
   .regular-text {
     @apply text-sm font-normal md:text-base leading-3 md:leading-4 lg:leading-5;
   }
   .card-title {
-    @apply text-sm font-bold md:text-base;
+    @apply text-lg font-medium md:text-2xl lg:text-3xl;
   }
 
   .wrapper {
@@ -235,5 +245,29 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes marquee2 {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@layer utilities {
+  .animate-marquee {
+    animation: marquee 40s linear infinite;
   }
 }
