@@ -3,6 +3,7 @@ import HowWeWork from "./howWeWork";
 import Industry from "./industry";
 import Machine from "./machine";
 import Plugin from "./plugin";
+import Pricing from "./pricing";
 import WhoWeAre from "./whoWeAre";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <Plugin />
       <HowWeWork />
       <WhoWeAre />
+      <Pricing />
     </>
   );
 }

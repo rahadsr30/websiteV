@@ -184,7 +184,7 @@ export function Footer() {
                   {[...Array(10)].map((_, i) => (
                     <h2
                       key={i}
-                      className="text-8xl md:text-9xl font-medium tracking-tighter whitespace-nowrap pr-12"
+                      className="text-9xl lg:text-[12rem] font-medium tracking-tighter whitespace-nowrap pr-12"
                     >
                       Get in touch
                     </h2>
