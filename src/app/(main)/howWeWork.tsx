@@ -30,7 +30,7 @@ export default function HowWeWork() {
       <div className="wrapper">
         <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-8 lg:mb-16">
           <div>
-            <h2 className="section-title-medium text-[#0A0A0B] mb-2 lg:mb-0">
+            <h2 className="section-title-medium text-[#0A0A0B]">
               Zero Guesswork.
               <br />
               Here&apos;s How We Work.

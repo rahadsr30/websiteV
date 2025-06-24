@@ -31,8 +31,14 @@
   .card-title {
     @apply text-lg font-medium md:text-2xl;
   }
+  .card-description {
+    @apply text-lg md:text-2xl font-medium;
+  }
   .card-title-lg {
     @apply text-lg font-medium md:text-2xl lg:text-[32px];
+  }
+  .card-label {
+    @apply text-3xl md:text-5xl lg:text-6xl font-semibold leading-tight;
   }
 
   .wrapper {
@@ -40,6 +46,9 @@
   }
   .py-section {
     @apply py-8 md:py-10 lg:py-12 xl:py-16;
+  }
+  .pb-section {
+    @apply pb-8 md:pb-10 lg:pb-12 xl:pb-16;
   }
 }
 
