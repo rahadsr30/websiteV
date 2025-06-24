@@ -35,7 +35,7 @@ export default function Machine() {
   return (
     <section className="py-section">
       <div className="wrapper">
-        <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-12">
+        <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-8 lg:mb-16">
           <h2 className="section-title-medium text-[#0A0A0B] mb-2 lg:mb-0">
             Let the Machines
             <br />
