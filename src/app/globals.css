@@ -24,6 +24,9 @@
   .small-text-medium {
     @apply text-sm font-medium md:text-base leading-4 md:leading-5 lg:leading-7;
   }
+  .large-text-medium {
+    @apply text-base font-medium md:text-xl leading-5 md:leading-6 lg:leading-8;
+  }
 
   .regular-text {
     @apply text-sm font-normal md:text-base leading-3 md:leading-4 lg:leading-5;
