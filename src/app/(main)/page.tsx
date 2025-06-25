@@ -1,3 +1,4 @@
+import Blog from "./blog";
 import Hero from "./hero";
 import HowWeWork from "./howWeWork";
 import Industry from "./industry";
@@ -16,6 +17,7 @@ export default function Home() {
       <HowWeWork />
       <WhoWeAre />
       <Pricing />
+      <Blog />
     </>
   );
 }
