@@ -145,7 +145,7 @@ export default function Blog() {
           ))}
         </div>
 
-        <div className="flex justify-between mt-8">
+        <div className="flex justify-between mt-8 lg:mt-10">
           <button
             onClick={prevSlide}
             className="card-title text-[#3A3A3F] hover:text-black transition-colors"
