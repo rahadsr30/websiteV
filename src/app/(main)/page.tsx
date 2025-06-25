@@ -6,6 +6,7 @@ import Machine from "./machine";
 import News from "./news";
 import Plugin from "./plugin";
 import Pricing from "./pricing";
+import Vision from "./vision";
 import WhoWeAre from "./whoWeAre";
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
       <Pricing />
       <Blog />
       <News />
+      <Vision />
     </>
   );
 }
