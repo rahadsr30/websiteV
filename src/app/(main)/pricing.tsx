@@ -53,7 +53,7 @@ export default function Pricing() {
             getting started or scaling enterprise-wide.
           </p>
         </div>
-        <div className="flex flex-wrap  justify-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {plans.map((plan) => (
             <div
               key={plan.name}
@@ -64,24 +64,26 @@ export default function Pricing() {
               <div className="mb-4 text-[#3A3A3F] section-description-medium">
                 {plan.name}
               </div>
-              <div className="flex items-baseline mb-2">
-                <span className="text-4xl font-bold">${plan.price}</span>
-                <span className="text-gray-400 ml-2 text-lg">/month</span>
+              <div className="flex items-baseline mb-20">
+                <span className="text-[#0A0A0B] card-label-lg">
+                  ${plan.price}
+                </span>
+                <span className="text-[#3A3A3F] card-title">/month</span>
               </div>
-              <ul className="list-none p-0 my-6 text-gray-800 text-[15px] leading-relaxed w-full">
+              <ul className="list-none p-0 text-[#0C2217] section-description w-full mb-16">
                 {plan.features.map((feature) => (
                   <li
                     key={feature}
-                    className="flex items-center mb-1 last:mb-0"
+                    className="flex items-center mb-1 last:mb-0 my-6"
                   >
-                    <span className="text-green-600 text-lg mr-2">✓</span>
+                    <span className="text-[#141B34] section-description mr-2">
+                      ✓
+                    </span>
                     {feature}
                   </li>
                 ))}
               </ul>
-              <Button className="w-full mt-auto rounded-full bg-black hover:bg-gray-900 text-white font-semibold py-3 text-base">
-                Get Started
-              </Button>
+              <Button className="w-full mt-auto">Get Started</Button>
             </div>
           ))}
         </div>
