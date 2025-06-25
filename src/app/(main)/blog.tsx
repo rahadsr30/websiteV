@@ -35,9 +35,9 @@ const testimonials = [
     hasPlay: true,
   },
   {
-    image: blogImage1,
+    image: blogImage2,
     avatar: avater2,
-    name: "Rahah Ahmed",
+    name: "Rokibul Hasan Rahat",
     title: "Product Manager, Tech Innovations Inc.",
     text: "Partnering with Vsenk has automated over 40% of our customer support tasks — with better user satisfaction than ever.",
     hasPlay: true,

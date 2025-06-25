@@ -7,6 +7,7 @@ import industry3 from "@/assets/industry/Healthcare.png";
 import industry4 from "@/assets/industry/Finance.png";
 import industry5 from "@/assets/industry/E-Commerce.png";
 import industry6 from "@/assets/industry/Manufacturing.png";
+import Marquee from "react-fast-marquee";
 
 const industries = [
   {
@@ -59,7 +60,7 @@ export default function Industry() {
         </div>
 
         <div className="relative overflow-hidden">
-          <div className="flex animate-marquee">
+          <Marquee className="">
             {industries.map((industry) => (
               <div
                 key={`first-${industry.name}`}
@@ -83,7 +84,7 @@ export default function Industry() {
                 </p>
               </div>
             ))}
-          </div>
+          </Marquee>
         </div>
       </div>
     </section>

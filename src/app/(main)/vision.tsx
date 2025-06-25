@@ -105,7 +105,7 @@ export default function Vision() {
                 />
               </div>
 
-              <div className="w-full flex justify-between items-center p-6">
+              <div className="w-full flex justify-between flex-col lg:flex-row items-center p-6">
                 <span className="section-description text-[#82848E]">
                   By sending this form I confirm that I<br />
                   have read and accept the{" "}
@@ -116,7 +116,9 @@ export default function Vision() {
                     Privacy Policy
                   </a>
                 </span>
-                <Button type="submit">Send Inquiry</Button>
+                <Button type="submit" className="w-full lg:w-auto mt-6 lg:mt-0">
+                  Send Inquiry
+                </Button>
               </div>
             </form>
           )}

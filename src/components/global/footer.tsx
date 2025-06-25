@@ -4,6 +4,7 @@ import { Logo } from "./logo";
 import { FaPhoneAlt } from "react-icons/fa";
 import { useState } from "react";
 import Link from "next/link";
+import Marquee from "react-fast-marquee";
 
 const links = [
   { name: "Facebook", href: "https://www.facebook.com" },
@@ -180,8 +181,8 @@ export function Footer() {
           <div className="border-b border-[#ACADB4]">
             <Link href="/contact" className="cursor-pointer">
               <div className="relative flex overflow-hidden py-4 group">
-                <div className="flex animate-[marquee_40s_linear_infinite]">
-                  {[...Array(10)].map((_, i) => (
+                <Marquee className="overflow-hidden">
+                  {[...Array(2)].map((_, i) => (
                     <h2
                       key={i}
                       className="text-9xl lg:text-[12rem] font-medium tracking-tighter whitespace-nowrap pr-12"
@@ -189,7 +190,7 @@ export function Footer() {
                       Get in touch
                     </h2>
                   ))}
-                </div>
+                </Marquee>
               </div>
             </Link>
           </div>
