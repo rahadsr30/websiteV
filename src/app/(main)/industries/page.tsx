@@ -18,6 +18,7 @@ const industries = [
     description:
       "Cut the red tape. Automate admin tasks, improve patient flow, and stay compliant, without overloading your team.",
     image: healthcareImage,
+    slug: "healthcare",
   },
   {
     id: "finance",
@@ -25,6 +26,7 @@ const industries = [
     description:
       "Speed up decisions. Catch fraud sooner. Free up your analysts from copy-paste work that slows you down.",
     image: financeImage,
+    slug: "finance",
   },
   {
     id: "retail-ecommerce",
@@ -32,6 +34,7 @@ const industries = [
     description:
       "Predict demand. Personalize in real-time. Let smart assistants handle the 3 a.m. questions so you don't have to.",
     image: ecommerceImage,
+    slug: "retail-ecommerce",
   },
   {
     id: "education",
@@ -39,6 +42,7 @@ const industries = [
     description:
       "Deliver personalized learning, automate administrative tasks, and engage students through AI-powered tools.",
     image: educationImage,
+    slug: "education",
   },
   {
     id: "manufacturing",
@@ -46,6 +50,7 @@ const industries = [
     description:
       "Streamline production, monitor quality, and predict maintenance issues before they happen — all powered by AI.",
     image: manufacturingImage,
+    slug: "manufacturing",
   },
   {
     id: "technology-software",
@@ -53,6 +58,7 @@ const industries = [
     description:
       "Accelerate innovation with scalable AI features, user behavior analytics, and intelligent automation baked in.",
     image: technologyImage,
+    slug: "technology-software",
   },
 ];
 
@@ -90,8 +96,8 @@ export default function IndustriesPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
             {industries.map((industry) => (
               <Link
-                key={industry.id}
-                href={`/industries/${industry.id}`}
+                key={industry.slug}
+                href={`/industries/${industry.slug}`}
                 className="group block"
               >
                 <div className="bg-[#F5F5F6] px-8 py-6 h-full">
