@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import React from "react";
 import heroImage from "@/assets/VheroImage.png";
-import { FaLongArrowAltRight } from "react-icons/fa";
+import { IoIosArrowRoundForward } from "react-icons/io";
 
 export default function Hero() {
   return (
@@ -33,7 +33,7 @@ export default function Hero() {
                 <span className="lg:max-w-[120px] text-[#3A3A3F] small-text-medium ">
                   See What We Build
                 </span>
-                <FaLongArrowAltRight className="text-2xl" />
+                <IoIosArrowRoundForward className="text-4xl" />
               </button>
             </div>
           </div>

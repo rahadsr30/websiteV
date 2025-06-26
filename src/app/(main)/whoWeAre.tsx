@@ -59,7 +59,7 @@ export default function WhoWeAre() {
 
             <div
               className="relative z-20 p-6 md:p-8 grid grid-cols-1 md:grid-cols-2 gap-8 md:absolute md:bottom-0 md:left-0 md:w-full 
-                  bg-[#F5F5F6] md:bg-transparent"
+                   md:bg-transparent"
             >
               <div className="flex items-center justify-center"></div>
 
@@ -72,7 +72,7 @@ export default function WhoWeAre() {
                   {coreValues.map((value, idx) => (
                     <div
                       key={idx}
-                      className="bg-[#0A0A0B] md:bg-white/10 backdrop-blur-sm p-4 flex-1 flex flex-col items-center text-white"
+                      className="bg-[#F5F5F6] md:bg-white/10 backdrop-blur-sm p-4 flex-1 flex flex-col items-center text-[#0A0A0B] md:text-white"
                     >
                       <Image
                         src={value.icon}
