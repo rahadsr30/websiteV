@@ -29,7 +29,7 @@
   }
 
   .regular-text {
-    @apply text-sm font-normal md:text-base leading-3 md:leading-4 lg:leading-5;
+    @apply text-sm font-normal md:text-base leading-5 md:leading-6 lg:leading-7;
   }
   .card-title {
     @apply text-lg font-medium md:text-2xl;

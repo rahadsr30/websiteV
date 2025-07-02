@@ -57,7 +57,7 @@ export default function News() {
                 className=""
               />
             </div>
-            <div className="p-6 flex-1 flex flex-col justify-between">
+            <div className="flex-1 flex flex-col justify-between">
               <div className="flex items-center text-[#3A3A3F] section-description mb-4">
                 <span className="mr-2">
                   <BsCalendar2 />

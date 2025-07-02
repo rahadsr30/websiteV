@@ -131,8 +131,61 @@ const successStories = [
   },
 ];
 
+const faqData = [
+  {
+    id: "benefits",
+    question: "What are the main benefits of AI in healthcare?",
+    answer:
+      "AI in healthcare improves operational efficiency, reduces human error, enhances patient care through predictive analytics, and automates repetitive tasks, allowing medical staff to focus on critical areas.",
+  },
+  {
+    id: "diagnosis",
+    question: "How does AI help with patient diagnosis?",
+    answer:
+      "AI assists in diagnosing medical conditions by analyzing medical imaging, patient data, and clinical history to provide more accurate and faster diagnoses, reducing errors and enabling timely interventions.",
+  },
+  {
+    id: "security",
+    question: "Is AI in healthcare secure?",
+    answer:
+      "Yes, AI solutions in healthcare are designed with security in mind, ensuring compliance with regulations like HIPAA. Vsenk's AI systems use robust encryption and continuous monitoring to protect patient data and maintain privacy.",
+  },
+  {
+    id: "patient-care",
+    question: "How does AI improve patient care and outcomes?",
+    answer:
+      "AI enhances patient outcomes by providing real-time data analysis, early detection of health issues, personalized treatment plans, and monitoring patient progress, ensuring proactive care and timely interventions.",
+  },
+  {
+    id: "integration",
+    question: "Can AI be integrated with existing healthcare systems?",
+    answer:
+      "Yes, Vsenk's AI solutions seamlessly integrate with existing healthcare platforms, such as EHR (Electronic Health Records), telemedicine tools, and patient management systems, ensuring smooth adoption without disrupting workflows.",
+  },
+  {
+    id: "data-requirements",
+    question:
+      "What kind of data does AI need to function effectively in healthcare?",
+    answer:
+      "AI in healthcare requires structured data such as patient records, medical imaging, lab results, and clinical data. The more comprehensive the data, the more accurate the AI models and predictions will be.",
+  },
+  {
+    id: "administrative",
+    question: "How does AI help with administrative tasks in healthcare?",
+    answer:
+      "AI automates administrative tasks like patient intake, appointment scheduling, billing, and claims processing, reducing manual effort, speeding up workflows, and improving overall operational efficiency.",
+  },
+  {
+    id: "future",
+    question: "What is the role of AI in healthcare’s future?",
+    answer:
+      "AI will continue to drive innovation in healthcare, including advancements in personalized medicine, predictive healthcare, remote patient monitoring, and automation of complex administrative and clinical tasks, improving both care quality and operational efficiency.",
+  },
+];
+
 export default function Page() {
   const [selectedChallenge, setSelectedChallenge] = useState(challenges[0]);
+  const [expandedFaq, setExpandedFaq] = useState("");
 
   return (
     <>
@@ -261,7 +314,7 @@ export default function Page() {
             </h2>
             <p className="max-w-md text-[#3A3A3F] section-description">
               The healthcare industry faces numerous challenges — from
-              administrative bottlenecks to diagnostic errors. Vsenk’s AI
+              administrative bottlenecks to diagnostic errors. Vsenk&apos;s AI
               solutions streamline operations, improve accuracy, and enhance
               patient care.
             </p>
@@ -313,6 +366,52 @@ export default function Page() {
 
       <Plugin />
       <News />
+
+      <section className="py-section">
+        <div className="wrapper">
+          <div className="mb-8 lg:mb-16 flex flex-wrap items-start justify-between gap-4">
+            <h2 className="section-title-medium text-[#0A0A0B]">
+              Freaquently Asked <br /> Questions
+            </h2>
+            <Button className="mt-3 md:mt-0">Contact Us</Button>
+          </div>
+
+          <div className="space-y-4">
+            {faqData.map((faq) => (
+              <div
+                key={faq.id}
+                className={` overflow-hidden ${
+                  expandedFaq === faq.id
+                    ? "border border-[#CECFD3]"
+                    : "bg-[#fff] "
+                }`}
+              >
+                <button
+                  onClick={() =>
+                    setExpandedFaq(expandedFaq === faq.id ? "" : faq.id)
+                  }
+                  className={`w-full p-6 text-left flex justify-between items-center transition-colors ${
+                    expandedFaq === faq.id ? "" : "bg-[#F5F5F6]"
+                  }`}
+                >
+                  <span className="text-[#3A3A3F] section-description-medium">
+                    {faq.question}
+                  </span>
+                  <span className="text-[#3A3A3F] section-description-medium ml-4 flex-shrink-0">
+                    {expandedFaq === faq.id ? "−" : "+"}
+                  </span>
+                </button>
+                {expandedFaq === faq.id && (
+                  <div className="px-6 pb-6 bg-[#fff]">
+                    <p className="text-[#585962] regular-text">{faq.answer}</p>
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <CTA />
     </>
   );
