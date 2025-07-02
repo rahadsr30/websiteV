@@ -63,10 +63,15 @@ export default function Vision() {
                   </div>
                   <div className="py-6 px-10 border-b-4 border-white">
                     <select className="w-full outline-none text-[#82848E] section-description">
-                      <option>Project Budget</option>
-                      <option>$1,000 - $5,000</option>
-                      <option>$5,000 - $10,000</option>
-                      <option>$10,000+</option>
+                      <option>Service Required</option>
+                      <option>Web Development</option>
+                      <option>Mobile App Development</option>
+                      <option>UI/UX Design</option>
+                      <option>E-commerce Solutions</option>
+                      <option>Custom Software Development</option>
+                      <option>Digital Marketing</option>
+                      <option>Consulting Services</option>
+                      <option>Other</option>
                     </select>
                   </div>
                 </div>
