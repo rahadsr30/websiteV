@@ -17,35 +17,35 @@ import challengeImage4 from "@/assets/industry/challenge4.png";
 
 const challenges = [
   {
-    id: "administrative",
-    title: "Too Much Paperwork, Not Enough Time",
-    solution: "Too Much Paperwork, Not Enough Time",
+    id: "1",
+    title: "Manual Scaling of Customer Support",
+    solution: "Manual Scaling of Customer Support",
     description:
-      "AI automates administrative tasks, such as intake, claims, and scheduling.",
+      "Deploy AI chatbot software services for 24/7 triage and faster support across Slack, Intercom, and web chat.",
     image: challengeImage1,
   },
   {
-    id: "diagnostic",
-    title: "Long Wait Times and Poor Patient Engagement",
-    solution: "Long Wait Times and Poor Patient Engagement",
+    id: "2",
+    title: "Product Teams Struggling to Ship Smarter Features",
+    solution: "Product Teams Struggling to Ship Smarter Features",
     description:
-      "Mental health AI chatbots offer instant support and guided care pathways.",
+      "Use GPT, embeddings, and AI search to build smart, scalable feature sets that ship fast.",
     image: challengeImage2,
   },
   {
-    id: "engagement",
-    title: "Fragmented Patient Data",
-    solution: "Fragmented Patient Data",
+    id: "3",
+    title: "Agency Teams Repeating Low-Value Work",
+    solution: "Agency Teams Repeating Low-Value Work",
     description:
-      "AI connects systems, extracts insights, and presents them clearly for clinicians.",
+      "Use AI to automate client onboarding, reporting, and documentation in tech service workflows.",
     image: challengeImage3,
   },
   {
-    id: "compliance",
-    title: "Staff Burnout and Shortages",
-    solution: "Staff Burnout and Shortages",
+    id: "4",
+    title: "Lack of Differentiation in SaaS Products",
+    solution: "Lack of Differentiation in SaaS Products",
     description:
-      "AI assistants handle routine inquiries and tasks, giving providers more time to focus on care.",
+      "Add AI-powered search, personalization, or summaries to increase retention and customer love.",
     image: challengeImage4,
   },
   // {
@@ -60,42 +60,37 @@ const challenges = [
 
 const cards = [
   {
-    title: "Workflow Automation",
+    title: "AI-Powered Product Features",
     icon: icon,
-    desc: "Automate intake forms, referrals, appointment scheduling, and insurance verification. Reduce paperwork and improve operational efficiency with AI-driven task routing.",
+    desc: "Add GPT-powered assistants, search, and personalization to your product. Use AI chatbot software services to enable customer-facing support, onboarding, or tutorials.",
   },
   {
-    title: "Customer Service & Mental Health Chatbots",
+    title: "Internal Workflow Automation",
     icon: icon,
-    desc: "Deploy AI health assistants and mental health AI chatbots to handle triage, FAQs, and patient support. Offer AI for mental health and wellbeing via conversational tools that provide pre-screening, follow-up, and guided care.",
+    desc: "Automate lead routing, project handoffs, and client communications using AI integration in technology industry platforms like Make, Zapier, and n8n.",
   },
   {
-    title: "Data Processing & Predictive Analytics",
+    title: "AI-Powered Customer Service",
     icon: icon,
-    desc: "Use AI in life sciences to analyze research data, clinical trials, or treatment outcomes. Predict hospital admissions, medication adherence, and treatment success rates.",
+    desc: "Integrate smart agents with Intercom, Zendesk, or Slack to reduce manual tickets and increase response speed. Ideal for product-led teams managing high volumes of inquiries.",
   },
   {
-    title: "EHR & CRM Integration",
+    title: "AI Content & Documentation Generation",
     icon: icon,
-    desc: "Sync AI tools with Salesforce Health Cloud, Epic, Athenahealth, or Cerner for a unified data ecosystem.",
+    desc: "Use generative AI in software agencies to auto-generate feature changelogs, API guides, onboarding docs, and patch notes.",
   },
-  // {
-  //   title: "Security Automation",
-  //   icon: icon,
-  //   desc: "Automate HIPAA compliance and safeguard patient data with AI systems that monitor.",
-  // },
-  // {
-  //   title: "Diagnostics Assistance",
-  //   icon: icon,
-  //   desc: "Leverage AI to assist in diagnosing conditions by analyzing medical images and patient data.",
-  // },
+  {
+    title: "Custom AI Systems for SaaS",
+    icon: icon,
+    desc: "Use AI for fraud prevention, recommendation engines, or behavioral analytics built directly into your app.",
+  },
 ];
 
 const successStories = [
   {
-    title: "Mayo Clinic – AI in Radiology Workflow",
+    title: "Notion – Generative AI Feature Launch",
     description:
-      "Used AI to interpret chest X-rays faster and prioritize urgent cases. Reduced report turnaround time by up to 40%.",
+      "Notion integrated OpenAI’s GPT models into its editor, enabling automatic writing, summarizing, and idea generation. It led to a surge in user engagement and media coverage.",
     metrics: [
       { value: "30%", label: "less wait time" },
       { value: "20%", label: "higher productivity" },
@@ -105,9 +100,9 @@ const successStories = [
     image: caseStudyImage1,
   },
   {
-    title: "Thrive AI Health – Mental Health AI for Daily Wellness",
+    title: "LinearB – Automated Status Summaries Using AI",
     description:
-      "Developed an AI-powered mental wellness coach with GPT-4 integration to promote stress management and personalized lifestyle coaching.",
+      "Linear built a GPT-4-powered feature that summarizes project updates and ticket histories, saving time for engineering teams during sprint reviews.",
     metrics: [
       { value: "25%", label: "more accuracy" },
       { value: "15%", label: "fewer errors" },
@@ -117,9 +112,9 @@ const successStories = [
     image: caseStudyImage2,
   },
   {
-    title: "Northwell Health – Patient Scheduling Automation",
+    title: "Zendesk – AI Ticket Routing",
     description:
-      "Integrated AI voice assistants with their call center and scheduling system. Resulted in a 30% increase in self-scheduled appointments.",
+      "Zendesk uses AI to categorize and prioritize support tickets automatically, reducing first-response time and routing errors.",
     metrics: [
       { value: "50,000", label: "queries handled" },
       { value: "40%", label: "faster responses" },
@@ -133,33 +128,28 @@ const successStories = [
 const faqData = [
   {
     id: "benefits",
-    question: "How is AI used in healthcare today?",
+    question: "How can AI be used in SaaS products?",
     answer:
-      "AI in healthcare is used for diagnostics, patient communication, clinical workflow automation, and data analysis. It helps providers make faster, more accurate decisions.",
+      "You can embed AI in your SaaS product to add personalization, automation, summarization, and smart decision-making features powered by LLMs or ML models.",
   },
   {
     id: "diagnosis",
-    question: "What is Thrive AI Health?",
+    question: "Do you offer AI chatbot software services in UAE or globally?",
     answer:
-      "Thrive AI Health is a wellness-focused AI assistant developed by Thrive Global and OpenAI, designed to support mental wellbeing and lifestyle changes.",
+      "Yes, we serve software companies worldwide, including AI chatbot development and integration in UAE, the US, EU, and Asia-Pacific.",
   },
   {
     id: "security",
-    question: "Is it safe to use AI for mental health applications?",
+    question: "Can you automate client onboarding for our software agency?",
     answer:
-      "Yes—when deployed with the right ethical and clinical guidelines, mental health AI tools can improve access and engagement without replacing licensed care.",
+      "Absolutely. We automate project setup, form collection, data sync, and reporting using Make, n8n, or custom-built solutions.",
   },
   {
     id: "patient-care",
-    question: "Can you integrate AI with EHR or hospital systems?",
+    question:
+      "How do you ensure security in AI integrations for tech platforms?",
     answer:
-      "Absolutely. We provide AI integration services for major healthcare platforms, including Salesforce Health Cloud, Epic, and Cerner.",
-  },
-  {
-    id: "integration",
-    question: "What are the benefits of AI in life sciences?",
-    answer:
-      "AI accelerates drug discovery, identifies trends in clinical trials, and improves population health analytics with large-scale data processing.",
+      "We follow best practices in encryption, logging, and role-based access. For sensitive data, we support private deployments and sandboxed AI environments.",
   },
 ];
 
@@ -173,15 +163,15 @@ export default function Page() {
         <div className="wrapper grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-20 items-center">
           <div>
             <h2 className="text-[#0A0A0B] section-title mb-4 lg:mb-6">
-              Revolutionizing Healthcare with AI Automation
+              Built for Builders: AI Solutions for Tech & Software Teams
             </h2>
             <p className="text-[#3A3A3F] section-description">
-              From patient intake to diagnostics to post-care engagement, Vsenk
-              delivers secure, scalable AI systems that help healthcare teams
-              work faster, care better, and stay compliant.
+              From smart features to backend automation, Vsenk helps SaaS teams
+              and software agencies integrate AI that drives product innovation
+              and operational efficiency—without adding complexity.
             </p>
             <Button className="mt-6 lg:mt-10">
-              Schedule a Healthcare AI Demo
+              Schedule a Demo with a Technical Consultant
             </Button>
           </div>
           <div>
@@ -196,8 +186,8 @@ export default function Page() {
 
       <section className="py-section">
         <div className="wrapper ">
-          <h2 className="section-title-medium text-[#0A0A0B] max-w-lg mb-8 lg:mb-16">
-            AI Solutions Built for Modern Healthcare
+          <h2 className="section-title-medium text-[#0A0A0B] max-w-screen-md mb-8 lg:mb-16">
+            AI Integrations That Supercharge Your Software Stack
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {cards.map((card) => (
@@ -233,7 +223,7 @@ export default function Page() {
         <div className="wrapper">
           <div className="mb-8 lg:mb-16 flex flex-wrap items-start justify-between gap-4">
             <h2 className="section-title-medium text-[#0A0A0B] max-w-lg">
-              Healthcare Success Stories
+              Technology-Software Success Stories
             </h2>
             <Button className="mt-3 md:mt-0">Explore Case Studies</Button>
           </div>
@@ -294,8 +284,8 @@ export default function Page() {
       <section className="py-section">
         <div className="wrapper">
           <div className="mb-8 lg:mb-16">
-            <h2 className="section-title-medium text-[#0A0A0B] max-w-screen-sm">
-              Solving Healthcare’s Most Pressing Pain Points with AI
+            <h2 className="section-title-medium text-[#0A0A0B] max-w-screen-md">
+              What’s Holding Finance Teams Back—And How AI Solves It
             </h2>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-start">
@@ -393,14 +383,15 @@ export default function Page() {
 
       <section className="py-section wrapper">
         <div className="text-center py-10 lg:py-20 px-10 lg:px-0 bg-cover bg-center bg-no-repeat bg-[url('/vcta.png')]">
-          <h2 className="section-title text-white mb-3 max-w-screen-md mx-auto">
-            Ready to Transform Your Healthcare Operations?
+          <h2 className="section-title text-white mb-3">
+            Let’s Build Smarter Software—Together
           </h2>
-          <p className="text-[#FFF] section-description max-w-screen-sm mx-auto mb-6 lg:mb-10">
-            From frontline support to life sciences innovation, we help health
-            systems and startups implement AI that delivers real outcomes.
+          <p className="text-[#FFF] section-description max-w-screen-md mx-auto mb-6 lg:mb-10">
+            Whether you’re building SaaS, running an agency, or launching a
+            platform, we’ll help you integrate AI that makes your product
+            smarter and your team faster.
           </p>
-          <Button variant="ghost">Request a Healthcare AI Demo</Button>
+          <Button variant="ghost">Schedule a Free AI Discovery Session</Button>
         </div>
       </section>
     </>

@@ -17,35 +17,35 @@ import challengeImage4 from "@/assets/industry/challenge4.png";
 
 const challenges = [
   {
-    id: "administrative",
-    title: "Too Much Paperwork, Not Enough Time",
-    solution: "Too Much Paperwork, Not Enough Time",
+    id: "1",
+    title: "Unplanned Downtime & High Maintenance Costs",
+    solution: "Unplanned Downtime & High Maintenance Costs",
     description:
-      "AI automates administrative tasks, such as intake, claims, and scheduling.",
+      "AI predicts failures in advance, allowing proactive maintenance scheduling.",
     image: challengeImage1,
   },
   {
-    id: "diagnostic",
-    title: "Long Wait Times and Poor Patient Engagement",
-    solution: "Long Wait Times and Poor Patient Engagement",
+    id: "2",
+    title: "Inconsistent Product Quality",
+    solution: "Inconsistent Product Quality",
     description:
-      "Mental health AI chatbots offer instant support and guided care pathways.",
+      "AI vision systems inspect at scale, reducing human error and scrap rates.",
     image: challengeImage2,
   },
   {
-    id: "engagement",
-    title: "Fragmented Patient Data",
-    solution: "Fragmented Patient Data",
+    id: "3",
+    title: "Inefficient Scheduling and Forecasting",
+    solution: "Inefficient Scheduling and Forecasting",
     description:
-      "AI connects systems, extracts insights, and presents them clearly for clinicians.",
+      "AI models balance supply, demand, and production capacity to optimize throughput.",
     image: challengeImage3,
   },
   {
-    id: "compliance",
-    title: "Staff Burnout and Shortages",
-    solution: "Staff Burnout and Shortages",
+    id: "4",
+    title: "Data Silos Across Factory Systems",
+    solution: "Data Silos Across Factory Systems",
     description:
-      "AI assistants handle routine inquiries and tasks, giving providers more time to focus on care.",
+      "AI connects ERP, MES, and sensor data for a unified, intelligent operations layer.",
     image: challengeImage4,
   },
   // {
@@ -60,42 +60,37 @@ const challenges = [
 
 const cards = [
   {
-    title: "Workflow Automation",
+    title: "Predictive Maintenance & Equipment Monitoring",
     icon: icon,
-    desc: "Automate intake forms, referrals, appointment scheduling, and insurance verification. Reduce paperwork and improve operational efficiency with AI-driven task routing.",
+    desc: "Use AI in manufacturing to detect anomalies and schedule maintenance before breakdowns occur. Monitor machine health in real-time using IoT sensor data and ML models.",
   },
   {
-    title: "Customer Service & Mental Health Chatbots",
+    title: "AI for Quality Control",
     icon: icon,
-    desc: "Deploy AI health assistants and mental health AI chatbots to handle triage, FAQs, and patient support. Offer AI for mental health and wellbeing via conversational tools that provide pre-screening, follow-up, and guided care.",
+    desc: "Automate defect detection using computer vision and deep learning. Improve accuracy, consistency, and reduce reliance on manual inspections.",
   },
   {
-    title: "Data Processing & Predictive Analytics",
+    title: "AI in Manufacturing Processes",
     icon: icon,
-    desc: "Use AI in life sciences to analyze research data, clinical trials, or treatment outcomes. Predict hospital admissions, medication adherence, and treatment success rates.",
+    desc: "Optimize supply chain logistics, energy consumption, and production workflows using AI for manufacturing companies.",
   },
   {
-    title: "EHR & CRM Integration",
+    title: "Production Planning & Demand Forecasting",
     icon: icon,
-    desc: "Sync AI tools with Salesforce Health Cloud, Epic, Athenahealth, or Cerner for a unified data ecosystem.",
+    desc: "Use AI/ML models to predict demand, plan procurement, and minimize overstock or shortages.",
   },
-  // {
-  //   title: "Security Automation",
-  //   icon: icon,
-  //   desc: "Automate HIPAA compliance and safeguard patient data with AI systems that monitor.",
-  // },
-  // {
-  //   title: "Diagnostics Assistance",
-  //   icon: icon,
-  //   desc: "Leverage AI to assist in diagnosing conditions by analyzing medical images and patient data.",
-  // },
+  {
+    title: "AI Chatbots for Internal Ops",
+    icon: icon,
+    desc: "Use voice or chat-based AI assistants to manage inventory checks, issue reporting, shift handovers, or internal FAQs.",
+  },
 ];
 
 const successStories = [
   {
-    title: "Mayo Clinic – AI in Radiology Workflow",
+    title: "Siemens – Predictive Maintenance Using AI",
     description:
-      "Used AI to interpret chest X-rays faster and prioritize urgent cases. Reduced report turnaround time by up to 40%.",
+      "Siemens uses AI-driven systems across plants to predict equipment failures before they happen, reducing unplanned downtime by up to 30%.",
     metrics: [
       { value: "30%", label: "less wait time" },
       { value: "20%", label: "higher productivity" },
@@ -105,9 +100,9 @@ const successStories = [
     image: caseStudyImage1,
   },
   {
-    title: "Thrive AI Health – Mental Health AI for Daily Wellness",
+    title: "General Motors – AI for Defect Detection",
     description:
-      "Developed an AI-powered mental wellness coach with GPT-4 integration to promote stress management and personalized lifestyle coaching.",
+      "GM partnered with IBM to use computer vision and AI for real-time quality control, detecting defects on assembly lines in milliseconds.",
     metrics: [
       { value: "25%", label: "more accuracy" },
       { value: "15%", label: "fewer errors" },
@@ -117,9 +112,9 @@ const successStories = [
     image: caseStudyImage2,
   },
   {
-    title: "Northwell Health – Patient Scheduling Automation",
+    title: "Fero Labs – AI for Process Optimization",
     description:
-      "Integrated AI voice assistants with their call center and scheduling system. Resulted in a 30% increase in self-scheduled appointments.",
+      "Steel manufacturers using Fero Labs’ explainable AI platform reduced raw material waste by up to 20% while maintaining product strength.",
     metrics: [
       { value: "50,000", label: "queries handled" },
       { value: "40%", label: "faster responses" },
@@ -133,33 +128,27 @@ const successStories = [
 const faqData = [
   {
     id: "benefits",
-    question: "How is AI used in healthcare today?",
+    question: "How is AI used in the manufacturing industry?",
     answer:
-      "AI in healthcare is used for diagnostics, patient communication, clinical workflow automation, and data analysis. It helps providers make faster, more accurate decisions.",
+      "AI in manufacturing is used for predictive maintenance, quality control, workflow optimization, and supply chain forecasting.",
   },
   {
     id: "diagnosis",
-    question: "What is Thrive AI Health?",
+    question: "What are common AI solutions in manufacturing?",
     answer:
-      "Thrive AI Health is a wellness-focused AI assistant developed by Thrive Global and OpenAI, designed to support mental wellbeing and lifestyle changes.",
+      "Common applications include AI for manufacturing quality control, machine failure prediction, real-time defect detection, and automation of routine operations.",
   },
   {
     id: "security",
-    question: "Is it safe to use AI for mental health applications?",
+    question: "Do you support AI in steel or chemical manufacturing?",
     answer:
-      "Yes—when deployed with the right ethical and clinical guidelines, mental health AI tools can improve access and engagement without replacing licensed care.",
+      "Yes—we've helped clients apply AI in steel manufacturing and AI in chemical manufacturing for yield optimization, safety monitoring, and anomaly detection.",
   },
   {
     id: "patient-care",
-    question: "Can you integrate AI with EHR or hospital systems?",
+    question: "Can AI be integrated into our existing MES or ERP?",
     answer:
-      "Absolutely. We provide AI integration services for major healthcare platforms, including Salesforce Health Cloud, Epic, and Cerner.",
-  },
-  {
-    id: "integration",
-    question: "What are the benefits of AI in life sciences?",
-    answer:
-      "AI accelerates drug discovery, identifies trends in clinical trials, and improves population health analytics with large-scale data processing.",
+      "Absolutely. We provide AI integration services for manufacturing, including SCADA systems, MES, ERP (SAP, Oracle), and custom IoT platforms.",
   },
 ];
 
@@ -173,15 +162,15 @@ export default function Page() {
         <div className="wrapper grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-20 items-center">
           <div>
             <h2 className="text-[#0A0A0B] section-title mb-4 lg:mb-6">
-              Revolutionizing Healthcare with AI Automation
+              Smarter Production, Safer Operations: AI for Manufacturing
             </h2>
             <p className="text-[#3A3A3F] section-description">
-              From patient intake to diagnostics to post-care engagement, Vsenk
-              delivers secure, scalable AI systems that help healthcare teams
-              work faster, care better, and stay compliant.
+              Vsenk delivers AI-powered systems that optimize processes, predict
+              maintenance needs, ensure quality control, and drive measurable
+              ROI across the factory floor.
             </p>
             <Button className="mt-6 lg:mt-10">
-              Schedule a Healthcare AI Demo
+              Schedule a Manufacturing AI Demo
             </Button>
           </div>
           <div>
@@ -196,8 +185,8 @@ export default function Page() {
 
       <section className="py-section">
         <div className="wrapper ">
-          <h2 className="section-title-medium text-[#0A0A0B] max-w-lg mb-8 lg:mb-16">
-            AI Solutions Built for Modern Healthcare
+          <h2 className="section-title-medium text-[#0A0A0B] max-w-screen-sm mb-8 lg:mb-16">
+            AI Solutions Designed for Manufacturing Excellence
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {cards.map((card) => (
@@ -233,7 +222,7 @@ export default function Page() {
         <div className="wrapper">
           <div className="mb-8 lg:mb-16 flex flex-wrap items-start justify-between gap-4">
             <h2 className="section-title-medium text-[#0A0A0B] max-w-lg">
-              Healthcare Success Stories
+              Manufacturing Success Stories
             </h2>
             <Button className="mt-3 md:mt-0">Explore Case Studies</Button>
           </div>
@@ -294,8 +283,8 @@ export default function Page() {
       <section className="py-section">
         <div className="wrapper">
           <div className="mb-8 lg:mb-16">
-            <h2 className="section-title-medium text-[#0A0A0B] max-w-screen-sm">
-              Solving Healthcare’s Most Pressing Pain Points with AI
+            <h2 className="section-title-medium text-[#0A0A0B] max-w-screen-md">
+              What’s Holding Finance Teams Back—And How AI Solves It
             </h2>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-start">
@@ -393,14 +382,15 @@ export default function Page() {
 
       <section className="py-section wrapper">
         <div className="text-center py-10 lg:py-20 px-10 lg:px-0 bg-cover bg-center bg-no-repeat bg-[url('/vcta.png')]">
-          <h2 className="section-title text-white mb-3 max-w-screen-md mx-auto">
-            Ready to Transform Your Healthcare Operations?
+          <h2 className="section-title text-white mb-3 max-w-screen-sm mx-auto">
+            Let’s Build the Smart Factory of the Future
           </h2>
           <p className="text-[#FFF] section-description max-w-screen-sm mx-auto mb-6 lg:mb-10">
-            From frontline support to life sciences innovation, we help health
-            systems and startups implement AI that delivers real outcomes.
+            From vision systems to predictive models, we help manufacturers
+            deploy AI where it counts—on the line, in the plant, and across the
+            supply chain.
           </p>
-          <Button variant="ghost">Request a Healthcare AI Demo</Button>
+          <Button variant="ghost">Book a Manufacturing AI Demo</Button>
         </div>
       </section>
     </>

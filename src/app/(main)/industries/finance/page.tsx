@@ -17,35 +17,35 @@ import challengeImage4 from "@/assets/industry/challenge4.png";
 
 const challenges = [
   {
-    id: "administrative",
-    title: "Too Much Paperwork, Not Enough Time",
-    solution: "Too Much Paperwork, Not Enough Time",
+    id: "1",
+    title: "Manual Compliance Reporting & Audits",
+    solution: "Manual Compliance Reporting & Audits",
     description:
-      "AI automates administrative tasks, such as intake, claims, and scheduling.",
+      "Generative AI summarizes reports, flags missing data, and automates policy checks.",
     image: challengeImage1,
   },
   {
-    id: "diagnostic",
-    title: "Long Wait Times and Poor Patient Engagement",
-    solution: "Long Wait Times and Poor Patient Engagement",
+    id: "2",
+    title: "Increasing Synthetic Fraud and KYC Risks",
+    solution: "Increasing Synthetic Fraud and KYC Risks",
     description:
-      "Mental health AI chatbots offer instant support and guided care pathways.",
+      "Real-time anomaly detection models reduce false positives and catch hidden threats.",
     image: challengeImage2,
   },
   {
-    id: "engagement",
-    title: "Fragmented Patient Data",
-    solution: "Fragmented Patient Data",
+    id: "3",
+    title: "Slow Decision-Making Due to Fragmented Data",
+    solution: "Slow Decision-Making Due to Fragmented Data",
     description:
-      "AI connects systems, extracts insights, and presents them clearly for clinicians.",
+      "AI dashboards consolidate data, highlight insights, and recommend subsequent actions.",
     image: challengeImage3,
   },
   {
-    id: "compliance",
-    title: "Staff Burnout and Shortages",
-    solution: "Staff Burnout and Shortages",
+    id: "4",
+    title: "High Cost of Customer Support",
+    solution: "High Cost of Customer Support",
     description:
-      "AI assistants handle routine inquiries and tasks, giving providers more time to focus on care.",
+      "AI chatbots handle Tier 1 queries, provide 24/7 support, and collect KYC data securely.",
     image: challengeImage4,
   },
   // {
@@ -60,42 +60,37 @@ const challenges = [
 
 const cards = [
   {
-    title: "Workflow Automation",
+    title: "Fraud Detection & Risk Modeling",
     icon: icon,
-    desc: "Automate intake forms, referrals, appointment scheduling, and insurance verification. Reduce paperwork and improve operational efficiency with AI-driven task routing.",
+    desc: "Utilize AI in finance to identify anomalies and high-risk behavior in real-time. Train models to identify synthetic identities, prevent false positives, and flag suspicious transactions faster.",
   },
   {
-    title: "Customer Service & Mental Health Chatbots",
+    title: "Generative AI for Reporting & Compliance",
     icon: icon,
-    desc: "Deploy AI health assistants and mental health AI chatbots to handle triage, FAQs, and patient support. Offer AI for mental health and wellbeing via conversational tools that provide pre-screening, follow-up, and guided care.",
+    desc: "Automate financial summaries, regulatory reporting, and internal memos using generative AI in finance. Train GPT models on your policies to instantly answer compliance queries.",
   },
   {
-    title: "Data Processing & Predictive Analytics",
+    title: "Finance AI Chatbot Integration",
     icon: icon,
-    desc: "Use AI in life sciences to analyze research data, clinical trials, or treatment outcomes. Predict hospital admissions, medication adherence, and treatment success rates.",
+    desc: "Deploy secure, knowledgeable bots that handle investor queries, KYC data capture, or onboarding workflows. Integrate with CRMs, accounting tools, and banking APIs.",
   },
   {
-    title: "EHR & CRM Integration",
+    title: "Predictive Analytics & Forecasting",
     icon: icon,
-    desc: "Sync AI tools with Salesforce Health Cloud, Epic, Athenahealth, or Cerner for a unified data ecosystem.",
+    desc: "Use AI/ML in finance for revenue modeling, expense prediction, and churn risk analysis.",
   },
-  // {
-  //   title: "Security Automation",
-  //   icon: icon,
-  //   desc: "Automate HIPAA compliance and safeguard patient data with AI systems that monitor.",
-  // },
-  // {
-  //   title: "Diagnostics Assistance",
-  //   icon: icon,
-  //   desc: "Leverage AI to assist in diagnosing conditions by analyzing medical images and patient data.",
-  // },
+  {
+    title: "Process Automation (RPA + AI)",
+    icon: icon,
+    desc: "Automate invoice processing, reconciliation, claims review, and data extraction from unstructured documents.",
+  },
 ];
 
 const successStories = [
   {
-    title: "Mayo Clinic – AI in Radiology Workflow",
+    title: "JPMorgan Chase – AI for Contract Analysis",
     description:
-      "Used AI to interpret chest X-rays faster and prioritize urgent cases. Reduced report turnaround time by up to 40%.",
+      "Built COiN, an internal platform that uses AI to review legal documents and extract key data, cutting review time by over 80%.",
     metrics: [
       { value: "30%", label: "less wait time" },
       { value: "20%", label: "higher productivity" },
@@ -105,9 +100,9 @@ const successStories = [
     image: caseStudyImage1,
   },
   {
-    title: "Thrive AI Health – Mental Health AI for Daily Wellness",
+    title: "Klarna – Personalized Finance Using AI",
     description:
-      "Developed an AI-powered mental wellness coach with GPT-4 integration to promote stress management and personalized lifestyle coaching.",
+      " Klarna utilizes AI to personalize credit decisions, reduce fraud, and optimize marketing campaigns, resulting in higher approval rates and more effective targeting.",
     metrics: [
       { value: "25%", label: "more accuracy" },
       { value: "15%", label: "fewer errors" },
@@ -117,9 +112,9 @@ const successStories = [
     image: caseStudyImage2,
   },
   {
-    title: "Northwell Health – Patient Scheduling Automation",
+    title: "SentiLink – Synthetic Fraud Detection",
     description:
-      "Integrated AI voice assistants with their call center and scheduling system. Resulted in a 30% increase in self-scheduled appointments.",
+      "SentiLink has developed AI models that help banks and lenders detect synthetic identities used for fraud. Partnered with leading credit providers and saved millions in fraud prevention.",
     metrics: [
       { value: "50,000", label: "queries handled" },
       { value: "40%", label: "faster responses" },
@@ -133,33 +128,27 @@ const successStories = [
 const faqData = [
   {
     id: "benefits",
-    question: "How is AI used in healthcare today?",
+    question: "How is AI used in the finance industry?",
     answer:
-      "AI in healthcare is used for diagnostics, patient communication, clinical workflow automation, and data analysis. It helps providers make faster, more accurate decisions.",
+      "AI in finance enables fraud detection, compliance automation, chatbot support, data analytics, and predictive modeling, reducing risk and improving efficiency.",
   },
   {
     id: "diagnosis",
-    question: "What is Thrive AI Health?",
+    question: "What’s the best AI for finance professionals?",
     answer:
-      "Thrive AI Health is a wellness-focused AI assistant developed by Thrive Global and OpenAI, designed to support mental wellbeing and lifestyle changes.",
+      "We tailor AI solutions based on need—GPT for reporting, ML models for forecasting, and AI agents for customer service.",
   },
   {
     id: "security",
-    question: "Is it safe to use AI for mental health applications?",
+    question: "Can you integrate AI into my existing banking software?",
     answer:
-      "Yes—when deployed with the right ethical and clinical guidelines, mental health AI tools can improve access and engagement without replacing licensed care.",
+      "Yes. We offer AI integration services for finance, including CRM systems, accounting platforms, internal risk management systems, and core banking APIs.",
   },
   {
     id: "patient-care",
-    question: "Can you integrate AI with EHR or hospital systems?",
+    question: "Is generative AI secure enough for finance?",
     answer:
-      "Absolutely. We provide AI integration services for major healthcare platforms, including Salesforce Health Cloud, Epic, and Cerner.",
-  },
-  {
-    id: "integration",
-    question: "What are the benefits of AI in life sciences?",
-    answer:
-      "AI accelerates drug discovery, identifies trends in clinical trials, and improves population health analytics with large-scale data processing.",
+      "Yes—with proper controls and sandboxing, generative AI in finance is safe, auditable, and compliant for internal use cases.",
   },
 ];
 
@@ -173,15 +162,16 @@ export default function Page() {
         <div className="wrapper grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-20 items-center">
           <div>
             <h2 className="text-[#0A0A0B] section-title mb-4 lg:mb-6">
-              Revolutionizing Healthcare with AI Automation
+              Smarter Decisions, Safer Systems: AI for Finance
             </h2>
             <p className="text-[#3A3A3F] section-description">
-              From patient intake to diagnostics to post-care engagement, Vsenk
-              delivers secure, scalable AI systems that help healthcare teams
-              work faster, care better, and stay compliant.
+              Vsenk helps financial institutions and fintech teams use AI to
+              detect fraud, streamline compliance, personalize experiences, and
+              make faster, data-backed decisions—without compromising on
+              security.
             </p>
             <Button className="mt-6 lg:mt-10">
-              Schedule a Healthcare AI Demo
+              Schedule a Finance AI Consultation
             </Button>
           </div>
           <div>
@@ -196,8 +186,8 @@ export default function Page() {
 
       <section className="py-section">
         <div className="wrapper ">
-          <h2 className="section-title-medium text-[#0A0A0B] max-w-lg mb-8 lg:mb-16">
-            AI Solutions Built for Modern Healthcare
+          <h2 className="section-title-medium text-[#0A0A0B] max-w-screen-sm mb-8 lg:mb-16">
+            AI-Powered Solutions Built for the Finance Industry
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {cards.map((card) => (
@@ -233,7 +223,7 @@ export default function Page() {
         <div className="wrapper">
           <div className="mb-8 lg:mb-16 flex flex-wrap items-start justify-between gap-4">
             <h2 className="section-title-medium text-[#0A0A0B] max-w-lg">
-              Healthcare Success Stories
+              Finance Success Stories
             </h2>
             <Button className="mt-3 md:mt-0">Explore Case Studies</Button>
           </div>
@@ -294,8 +284,8 @@ export default function Page() {
       <section className="py-section">
         <div className="wrapper">
           <div className="mb-8 lg:mb-16">
-            <h2 className="section-title-medium text-[#0A0A0B] max-w-screen-sm">
-              Solving Healthcare’s Most Pressing Pain Points with AI
+            <h2 className="section-title-medium text-[#0A0A0B] max-w-screen-md">
+              What’s Holding Finance Teams Back—And How AI Solves It
             </h2>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-start">
@@ -394,13 +384,14 @@ export default function Page() {
       <section className="py-section wrapper">
         <div className="text-center py-10 lg:py-20 px-10 lg:px-0 bg-cover bg-center bg-no-repeat bg-[url('/vcta.png')]">
           <h2 className="section-title text-white mb-3 max-w-screen-md mx-auto">
-            Ready to Transform Your Healthcare Operations?
+            Ready to Bring AI to Your Finance Stack?
           </h2>
-          <p className="text-[#FFF] section-description max-w-screen-sm mx-auto mb-6 lg:mb-10">
-            From frontline support to life sciences innovation, we help health
-            systems and startups implement AI that delivers real outcomes.
+          <p className="text-[#FFF] section-description max-w-screen-md mx-auto mb-6 lg:mb-10">
+            We help banks, fintech startups, and investment teams use AI to make
+            faster, smarter, safer decisions—securely integrated with your
+            existing workflows.
           </p>
-          <Button variant="ghost">Request a Healthcare AI Demo</Button>
+          <Button variant="ghost">Schedule a Finance AI Demo</Button>
         </div>
       </section>
     </>

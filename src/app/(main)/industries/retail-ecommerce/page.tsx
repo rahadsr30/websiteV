@@ -17,35 +17,35 @@ import challengeImage4 from "@/assets/industry/challenge4.png";
 
 const challenges = [
   {
-    id: "administrative",
-    title: "Too Much Paperwork, Not Enough Time",
-    solution: "Too Much Paperwork, Not Enough Time",
+    id: "1",
+    title: "Cart Abandonment",
+    solution: "Cart Abandonment",
     description:
-      "AI automates administrative tasks, such as intake, claims, and scheduling.",
+      "AI chatbots and remarketing flows engage customers in real time to recover sales",
     image: challengeImage1,
   },
   {
-    id: "diagnostic",
-    title: "Long Wait Times and Poor Patient Engagement",
-    solution: "Long Wait Times and Poor Patient Engagement",
+    id: "2",
+    title: "Generic Shopping Experience",
+    solution: "Generic Shopping Experience",
     description:
-      "Mental health AI chatbots offer instant support and guided care pathways.",
+      "Use AI-based e-commerce personalization to serve dynamic content and boost AOV.",
     image: challengeImage2,
   },
   {
-    id: "engagement",
-    title: "Fragmented Patient Data",
-    solution: "Fragmented Patient Data",
+    id: "3",
+    title: "Slow Content Production",
+    solution: "Slow Content Production",
     description:
-      "AI connects systems, extracts insights, and presents them clearly for clinicians.",
+      "Leverage generative AI in e-commerce to auto-generate SEO-optimized product descriptions and landing pages.",
     image: challengeImage3,
   },
   {
-    id: "compliance",
-    title: "Staff Burnout and Shortages",
-    solution: "Staff Burnout and Shortages",
+    id: "4",
+    title: "Inventory Mismanagement",
+    solution: "Inventory Mismanagement",
     description:
-      "AI assistants handle routine inquiries and tasks, giving providers more time to focus on care.",
+      "Predict demand and sync stock across channels using AI-driven forecasts.",
     image: challengeImage4,
   },
   // {
@@ -60,42 +60,37 @@ const challenges = [
 
 const cards = [
   {
-    title: "Workflow Automation",
+    title: "AI Chatbots for E-Commerce",
     icon: icon,
-    desc: "Automate intake forms, referrals, appointment scheduling, and insurance verification. Reduce paperwork and improve operational efficiency with AI-driven task routing.",
+    desc: "Handle pre-sale questions, returns, shipping updates, and product recommendations 24/7. Deploy voice or chat-based assistants across web, WhatsApp, and Messenger.",
   },
   {
-    title: "Customer Service & Mental Health Chatbots",
+    title: "AI-Powered Personalization",
     icon: icon,
-    desc: "Deploy AI health assistants and mental health AI chatbots to handle triage, FAQs, and patient support. Offer AI for mental health and wellbeing via conversational tools that provide pre-screening, follow-up, and guided care.",
+    desc: "Use AI e-commerce personalization to tailor homepages, collections, and recommendations to each shopper. Segment audiences and trigger dynamic campaigns based on behavior.",
   },
   {
-    title: "Data Processing & Predictive Analytics",
+    title: "AI Product Content & SEO",
     icon: icon,
-    desc: "Use AI in life sciences to analyze research data, clinical trials, or treatment outcomes. Predict hospital admissions, medication adherence, and treatment success rates.",
+    desc: "Use generative AI in e-commerce to generate high-converting product descriptions, reviews, and category copy at scale. Automate Shopify AI SEO optimization for better rankings and click-throughs.",
   },
   {
-    title: "EHR & CRM Integration",
+    title: "Inventory & Order Management Automation",
     icon: icon,
-    desc: "Sync AI tools with Salesforce Health Cloud, Epic, Athenahealth, or Cerner for a unified data ecosystem.",
+    desc: "Predict demand, sync inventory across channels, and reduce stockouts or overstocks using AI e-commerce analytics tools.",
   },
-  // {
-  //   title: "Security Automation",
-  //   icon: icon,
-  //   desc: "Automate HIPAA compliance and safeguard patient data with AI systems that monitor.",
-  // },
-  // {
-  //   title: "Diagnostics Assistance",
-  //   icon: icon,
-  //   desc: "Leverage AI to assist in diagnosing conditions by analyzing medical images and patient data.",
-  // },
+  {
+    title: "CRM & Marketing Automation",
+    icon: icon,
+    desc: "Deploy the best AI CRM software for e-commerce to score leads, recover abandoned carts, and personalize lifecycle emails.",
+  },
 ];
 
 const successStories = [
   {
-    title: "Mayo Clinic – AI in Radiology Workflow",
+    title: "Glossier – AI Personalization at Scale",
     description:
-      "Used AI to interpret chest X-rays faster and prioritize urgent cases. Reduced report turnaround time by up to 40%.",
+      "Glossier uses machine learning to personalize product recommendations and email content, driving higher conversion rates and retention.",
     metrics: [
       { value: "30%", label: "less wait time" },
       { value: "20%", label: "higher productivity" },
@@ -105,9 +100,9 @@ const successStories = [
     image: caseStudyImage1,
   },
   {
-    title: "Thrive AI Health – Mental Health AI for Daily Wellness",
+    title: "Rebag – Visual Search & AI-Powered Pricing",
     description:
-      "Developed an AI-powered mental wellness coach with GPT-4 integration to promote stress management and personalized lifestyle coaching.",
+      "Rebag implemented AI to recognize luxury items and suggest pricing based on market trends, speeding up listing creation by 80%.",
     metrics: [
       { value: "25%", label: "more accuracy" },
       { value: "15%", label: "fewer errors" },
@@ -117,9 +112,9 @@ const successStories = [
     image: caseStudyImage2,
   },
   {
-    title: "Northwell Health – Patient Scheduling Automation",
+    title: "Decathlon – Chatbot + Store Assistant",
     description:
-      "Integrated AI voice assistants with their call center and scheduling system. Resulted in a 30% increase in self-scheduled appointments.",
+      "Decathlon deployed an AI chatbot to guide online shoppers and check store availability. It improved digital experience and increased customer satisfaction scores.",
     metrics: [
       { value: "50,000", label: "queries handled" },
       { value: "40%", label: "faster responses" },
@@ -133,33 +128,27 @@ const successStories = [
 const faqData = [
   {
     id: "benefits",
-    question: "How is AI used in healthcare today?",
+    question: "What are the best AI tools for e-commerce?",
     answer:
-      "AI in healthcare is used for diagnostics, patient communication, clinical workflow automation, and data analysis. It helps providers make faster, more accurate decisions.",
+      "Depending on your use case—OpenAI for product content, Klaviyo for AI email flows, Re:amaze or Gorgias for support automation, and Make for operational flows.",
   },
   {
     id: "diagnosis",
-    question: "What is Thrive AI Health?",
+    question: "How does AI help in e-commerce personalization?",
     answer:
-      "Thrive AI Health is a wellness-focused AI assistant developed by Thrive Global and OpenAI, designed to support mental wellbeing and lifestyle changes.",
+      "AI personalizes product displays, recommendations, and emails based on browsing behavior, purchase history, and engagement patterns.",
   },
   {
     id: "security",
-    question: "Is it safe to use AI for mental health applications?",
+    question: "Can you integrate AI with Shopify or WooCommerce?",
     answer:
-      "Yes—when deployed with the right ethical and clinical guidelines, mental health AI tools can improve access and engagement without replacing licensed care.",
+      "Absolutely. We offer complete AI integration services for e-commerce, including Shopify AI tools and automation via Zapier, Make, and custom APIs.",
   },
   {
     id: "patient-care",
-    question: "Can you integrate AI with EHR or hospital systems?",
+    question: "Does AI improve my SEO or product listings?",
     answer:
-      "Absolutely. We provide AI integration services for major healthcare platforms, including Salesforce Health Cloud, Epic, and Cerner.",
-  },
-  {
-    id: "integration",
-    question: "What are the benefits of AI in life sciences?",
-    answer:
-      "AI accelerates drug discovery, identifies trends in clinical trials, and improves population health analytics with large-scale data processing.",
+      "Yes. We use AI to generate product titles, meta descriptions, and category content that improves rankings and drives traffic.",
   },
 ];
 
@@ -173,15 +162,15 @@ export default function Page() {
         <div className="wrapper grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-20 items-center">
           <div>
             <h2 className="text-[#0A0A0B] section-title mb-4 lg:mb-6">
-              Revolutionizing Healthcare with AI Automation
+              AI That Converts Shoppers into Loyal Customers
             </h2>
             <p className="text-[#3A3A3F] section-description">
-              From patient intake to diagnostics to post-care engagement, Vsenk
-              delivers secure, scalable AI systems that help healthcare teams
-              work faster, care better, and stay compliant.
+              From personalized product recommendations to AI chatbots and
+              automated inventory workflows, Vsenk helps e-commerce and retail
+              brands use AI to scale smarter and sell more.
             </p>
             <Button className="mt-6 lg:mt-10">
-              Schedule a Healthcare AI Demo
+              Book an E-Commerce AI Demo
             </Button>
           </div>
           <div>
@@ -196,8 +185,8 @@ export default function Page() {
 
       <section className="py-section">
         <div className="wrapper ">
-          <h2 className="section-title-medium text-[#0A0A0B] max-w-lg mb-8 lg:mb-16">
-            AI Solutions Built for Modern Healthcare
+          <h2 className="section-title-medium text-[#0A0A0B] max-w-[680px] mb-8 lg:mb-16">
+            AI-Powered Solutions for Retail & E-Commerce Growth
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {cards.map((card) => (
@@ -233,7 +222,7 @@ export default function Page() {
         <div className="wrapper">
           <div className="mb-8 lg:mb-16 flex flex-wrap items-start justify-between gap-4">
             <h2 className="section-title-medium text-[#0A0A0B] max-w-lg">
-              Healthcare Success Stories
+              Retail-Ecommerce Success Stories
             </h2>
             <Button className="mt-3 md:mt-0">Explore Case Studies</Button>
           </div>
@@ -294,8 +283,8 @@ export default function Page() {
       <section className="py-section">
         <div className="wrapper">
           <div className="mb-8 lg:mb-16">
-            <h2 className="section-title-medium text-[#0A0A0B] max-w-screen-sm">
-              Solving Healthcare’s Most Pressing Pain Points with AI
+            <h2 className="section-title-medium text-[#0A0A0B] max-w-screen-md">
+              What’s Holding Finance Teams Back—And How AI Solves It
             </h2>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-start">
@@ -394,13 +383,13 @@ export default function Page() {
       <section className="py-section wrapper">
         <div className="text-center py-10 lg:py-20 px-10 lg:px-0 bg-cover bg-center bg-no-repeat bg-[url('/vcta.png')]">
           <h2 className="section-title text-white mb-3 max-w-screen-md mx-auto">
-            Ready to Transform Your Healthcare Operations?
+            Ready to Turn AI Into Your Competitive Edge?
           </h2>
           <p className="text-[#FFF] section-description max-w-screen-sm mx-auto mb-6 lg:mb-10">
-            From frontline support to life sciences innovation, we help health
-            systems and startups implement AI that delivers real outcomes.
+            Let’s build smarter e-commerce systems—from personalized shopping
+            journeys to AI-powered store operations.
           </p>
-          <Button variant="ghost">Request a Healthcare AI Demo</Button>
+          <Button variant="ghost">Request an E-Commerce AI Demo</Button>
         </div>
       </section>
     </>

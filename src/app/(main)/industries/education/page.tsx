@@ -17,35 +17,35 @@ import challengeImage4 from "@/assets/industry/challenge4.png";
 
 const challenges = [
   {
-    id: "administrative",
-    title: "Too Much Paperwork, Not Enough Time",
-    solution: "Too Much Paperwork, Not Enough Time",
+    id: "1",
+    title: "Limited Instructor Bandwidth",
+    solution: "Limited Instructor Bandwidth",
     description:
-      "AI automates administrative tasks, such as intake, claims, and scheduling.",
+      "Deploy AI to assist students with questions, feedback, and guidance—24/7.",
     image: challengeImage1,
   },
   {
-    id: "diagnostic",
-    title: "Long Wait Times and Poor Patient Engagement",
-    solution: "Long Wait Times and Poor Patient Engagement",
+    id: "2",
+    title: "High Administrative Workload",
+    solution: "High Administrative Workload",
     description:
-      "Mental health AI chatbots offer instant support and guided care pathways.",
+      "Automate forms, grading, scheduling, and documentation with AI integration in educational institutes.",
     image: challengeImage2,
   },
   {
-    id: "engagement",
-    title: "Fragmented Patient Data",
-    solution: "Fragmented Patient Data",
+    id: "3",
+    title: "Low Engagement in Online Learning",
+    solution: "Low Engagement in Online Learning",
     description:
-      "AI connects systems, extracts insights, and presents them clearly for clinicians.",
+      "Use AI for university personalization and content pacing to increase retention.",
     image: challengeImage3,
   },
   {
-    id: "compliance",
-    title: "Staff Burnout and Shortages",
-    solution: "Staff Burnout and Shortages",
+    id: "4",
+    title: "Content Creation Bottlenecks",
+    solution: "Content Creation Bottlenecks",
     description:
-      "AI assistants handle routine inquiries and tasks, giving providers more time to focus on care.",
+      "Use generative AI in higher education to build materials at scale with consistency and accuracy.",
     image: challengeImage4,
   },
   // {
@@ -60,42 +60,32 @@ const challenges = [
 
 const cards = [
   {
-    title: "Workflow Automation",
+    title: "AI Tutoring & Academic Assistance",
     icon: icon,
-    desc: "Automate intake forms, referrals, appointment scheduling, and insurance verification. Reduce paperwork and improve operational efficiency with AI-driven task routing.",
+    desc: "Deploy AI for college and university-level learning assistants that answer questions, explain topics, and guide self-paced study. Use chatbot-based SI support in university settings to enhance student services.",
   },
   {
-    title: "Customer Service & Mental Health Chatbots",
+    title: "Generative AI for Content Creation",
     icon: icon,
-    desc: "Deploy AI health assistants and mental health AI chatbots to handle triage, FAQs, and patient support. Offer AI for mental health and wellbeing via conversational tools that provide pre-screening, follow-up, and guided care.",
+    desc: "Generate quizzes, lesson plans, explanations, and revision summaries using generative AI in education. Automate course material updates with AI that adapts to curriculum changes.",
   },
   {
-    title: "Data Processing & Predictive Analytics",
+    title: "AI for Administrative Automation",
     icon: icon,
-    desc: "Use AI in life sciences to analyze research data, clinical trials, or treatment outcomes. Predict hospital admissions, medication adherence, and treatment success rates.",
+    desc: "Automate student enrollment, support tickets, document generation, and grading workflows. Use AI to reduce administrative fatigue in higher education institutions.",
   },
   {
-    title: "EHR & CRM Integration",
+    title: "Smart Personalization & Engagement",
     icon: icon,
-    desc: "Sync AI tools with Salesforce Health Cloud, Epic, Athenahealth, or Cerner for a unified data ecosystem.",
+    desc: "Build AI systems that adapt content difficulty, suggest learning paths, and personalize onboarding. Track learning patterns and optimize instruction in real time.",
   },
-  // {
-  //   title: "Security Automation",
-  //   icon: icon,
-  //   desc: "Automate HIPAA compliance and safeguard patient data with AI systems that monitor.",
-  // },
-  // {
-  //   title: "Diagnostics Assistance",
-  //   icon: icon,
-  //   desc: "Leverage AI to assist in diagnosing conditions by analyzing medical images and patient data.",
-  // },
 ];
 
 const successStories = [
   {
-    title: "Mayo Clinic – AI in Radiology Workflow",
+    title: "Khan Academy – GPT-4 Powered AI Tutor “Khanmigo”",
     description:
-      "Used AI to interpret chest X-rays faster and prioritize urgent cases. Reduced report turnaround time by up to 40%.",
+      "Khan Academy built an AI learning guide powered by GPT-4 that helps students learn interactively and gives teachers real-time teaching support.",
     metrics: [
       { value: "30%", label: "less wait time" },
       { value: "20%", label: "higher productivity" },
@@ -105,9 +95,9 @@ const successStories = [
     image: caseStudyImage1,
   },
   {
-    title: "Thrive AI Health – Mental Health AI for Daily Wellness",
+    title: "Arizona State University – Generative AI for Curriculum Support",
     description:
-      "Developed an AI-powered mental wellness coach with GPT-4 integration to promote stress management and personalized lifestyle coaching.",
+      "ASU partnered with OpenAI to explore how ChatGPT can enhance teaching and learning, including generating content and offering learning assistance.",
     metrics: [
       { value: "25%", label: "more accuracy" },
       { value: "15%", label: "fewer errors" },
@@ -117,9 +107,9 @@ const successStories = [
     image: caseStudyImage2,
   },
   {
-    title: "Northwell Health – Patient Scheduling Automation",
+    title: "Duolingo – AI for Personalized Language Learning",
     description:
-      "Integrated AI voice assistants with their call center and scheduling system. Resulted in a 30% increase in self-scheduled appointments.",
+      "Duolingo uses AI to adapt exercises, analyze learner progress, and generate custom lessons—helping users retain information more effectively.",
     metrics: [
       { value: "50,000", label: "queries handled" },
       { value: "40%", label: "faster responses" },
@@ -133,33 +123,27 @@ const successStories = [
 const faqData = [
   {
     id: "benefits",
-    question: "How is AI used in healthcare today?",
+    question: "What are the benefits of AI in education?",
     answer:
-      "AI in healthcare is used for diagnostics, patient communication, clinical workflow automation, and data analysis. It helps providers make faster, more accurate decisions.",
+      "AI improves accessibility, automates repetitive tasks, offers personalized learning experiences, and enhances content creation—all of which improve student outcomes.",
   },
   {
     id: "diagnosis",
-    question: "What is Thrive AI Health?",
+    question: "Can AI be used for university-level education?",
     answer:
-      "Thrive AI Health is a wellness-focused AI assistant developed by Thrive Global and OpenAI, designed to support mental wellbeing and lifestyle changes.",
+      "Yes. We deploy AI for university systems, including GPT-powered tutoring, enrollment chatbots, curriculum generation, and automated support desks.",
   },
   {
     id: "security",
-    question: "Is it safe to use AI for mental health applications?",
+    question: "Is there a best free AI for university assignments?",
     answer:
-      "Yes—when deployed with the right ethical and clinical guidelines, mental health AI tools can improve access and engagement without replacing licensed care.",
+      "Tools like ChatGPT and Claude can assist with idea development and tutoring—but always within academic integrity guidelines. We build institutional-grade tools for ethical student support.",
   },
   {
     id: "patient-care",
-    question: "Can you integrate AI with EHR or hospital systems?",
+    question: "How does AI support educational businesses and EdTech startups?",
     answer:
-      "Absolutely. We provide AI integration services for major healthcare platforms, including Salesforce Health Cloud, Epic, and Cerner.",
-  },
-  {
-    id: "integration",
-    question: "What are the benefits of AI in life sciences?",
-    answer:
-      "AI accelerates drug discovery, identifies trends in clinical trials, and improves population health analytics with large-scale data processing.",
+      "We help education platforms build smart features, automate workflows, and deliver scalable, personalized content using education AI tools and LLM integrations.",
   },
 ];
 
@@ -173,15 +157,15 @@ export default function Page() {
         <div className="wrapper grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-20 items-center">
           <div>
             <h2 className="text-[#0A0A0B] section-title mb-4 lg:mb-6">
-              Revolutionizing Healthcare with AI Automation
+              Smarter Learning at Scale: AI Solutions for Education
             </h2>
             <p className="text-[#3A3A3F] section-description">
-              From patient intake to diagnostics to post-care engagement, Vsenk
-              delivers secure, scalable AI systems that help healthcare teams
-              work faster, care better, and stay compliant.
+              From personalized tutoring to intelligent automation, Vsenk helps
+              education providers and institutions deploy AI that improves
+              outcomes for students, faculty, and administrators.
             </p>
             <Button className="mt-6 lg:mt-10">
-              Schedule a Healthcare AI Demo
+              Schedule an Education AI Demo
             </Button>
           </div>
           <div>
@@ -196,8 +180,8 @@ export default function Page() {
 
       <section className="py-section">
         <div className="wrapper ">
-          <h2 className="section-title-medium text-[#0A0A0B] max-w-lg mb-8 lg:mb-16">
-            AI Solutions Built for Modern Healthcare
+          <h2 className="section-title-medium text-[#0A0A0B] max-w-screen-sm mb-8 lg:mb-16">
+            AI Tools That Improve the Way Education Works
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {cards.map((card) => (
@@ -233,7 +217,7 @@ export default function Page() {
         <div className="wrapper">
           <div className="mb-8 lg:mb-16 flex flex-wrap items-start justify-between gap-4">
             <h2 className="section-title-medium text-[#0A0A0B] max-w-lg">
-              Healthcare Success Stories
+              Education Success Stories
             </h2>
             <Button className="mt-3 md:mt-0">Explore Case Studies</Button>
           </div>
@@ -294,8 +278,8 @@ export default function Page() {
       <section className="py-section">
         <div className="wrapper">
           <div className="mb-8 lg:mb-16">
-            <h2 className="section-title-medium text-[#0A0A0B] max-w-screen-sm">
-              Solving Healthcare’s Most Pressing Pain Points with AI
+            <h2 className="section-title-medium text-[#0A0A0B] max-w-screen-md">
+              What’s Holding Finance Teams Back—And How AI Solves It
             </h2>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-start">
@@ -394,13 +378,14 @@ export default function Page() {
       <section className="py-section wrapper">
         <div className="text-center py-10 lg:py-20 px-10 lg:px-0 bg-cover bg-center bg-no-repeat bg-[url('/vcta.png')]">
           <h2 className="section-title text-white mb-3 max-w-screen-md mx-auto">
-            Ready to Transform Your Healthcare Operations?
+            Let’s Build the Future of Learning—Powered by AI
           </h2>
           <p className="text-[#FFF] section-description max-w-screen-sm mx-auto mb-6 lg:mb-10">
-            From frontline support to life sciences innovation, we help health
-            systems and startups implement AI that delivers real outcomes.
+            From higher ed institutions to EdTech startups, we help you
+            implement AI that improves outcomes, scales delivery, and supports
+            every learner.
           </p>
-          <Button variant="ghost">Request a Healthcare AI Demo</Button>
+          <Button variant="ghost">Book an AI Demo for Education</Button>
         </div>
       </section>
     </>
