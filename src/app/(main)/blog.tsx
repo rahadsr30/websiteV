@@ -7,7 +7,7 @@ import avater1 from "@/assets/blog/bavater1.png";
 import avater2 from "@/assets/blog/bavater2.png";
 import avater3 from "@/assets/blog/bavater3.png";
 import Image from "next/image";
-import { FaLongArrowAltLeft, FaLongArrowAltRight } from "react-icons/fa";
+import { IoIosArrowRoundBack, IoIosArrowRoundForward } from "react-icons/io";
 
 const testimonials = [
   {
@@ -150,13 +150,13 @@ export default function Blog() {
             onClick={prevSlide}
             className="card-title text-[#3A3A3F] hover:text-black transition-colors"
           >
-            <FaLongArrowAltLeft />
+            <IoIosArrowRoundBack className="text-3xl" />
           </button>
           <button
             onClick={nextSlide}
             className="card-title text-[#3A3A3F] hover:text-black transition-colors"
           >
-            <FaLongArrowAltRight />
+            <IoIosArrowRoundForward className="text-3xl" />
           </button>
         </div>
       </div>

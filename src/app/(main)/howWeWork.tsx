@@ -30,14 +30,12 @@ export default function HowWeWork() {
       <div className="wrapper">
         <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-8 lg:mb-16">
           <div>
-            <h2 className="section-title-medium text-[#0A0A0B]">
-              Zero Guesswork.
-              <br />
-              Here&apos;s How We Work.
+            <h2 className="section-title-medium text-[#0A0A0B] max-w-screen-sm">
+              Zero Guesswork. Here’s How We Work.
             </h2>
           </div>
           <div className="mt-3 md:mt-0">
-            <Button>Book Your Strategy Call</Button>
+            <Button>Book Your Strategy Session</Button>
           </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1">

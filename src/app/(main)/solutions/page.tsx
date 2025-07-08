@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import serviceImage from "@/assets/service.png";
 import icon from "@/assets/iconnn.png";
@@ -9,27 +10,26 @@ const cards = [
   {
     title: "AI Chatbots & Virtual Assistants",
     icon: icon,
-    desc: "Trained on your data. Speaking in your tone. Always-on customer service that doesn't burn out.",
+    desc: "Trained on your data. Speaking in your tone. Always-on customer service that doesn&apos;t burn out.",
+    slug: "chatbots-virtual-assistants",
   },
   {
     title: "CRM & Marketing Automation",
     icon: icon,
     desc: "Lead nurturing without the manual grind. Keep your funnel warm while your team closes.",
+    slug: "crm-marketing-automation",
   },
   {
     title: "AI/ML Development",
     icon: icon,
     desc: "Custom-built intelligence that fits your workflow, not a one-size-fits-none platform.",
-  },
-  {
-    title: "Data & Analytics Automation",
-    icon: icon,
-    desc: "From raw data to real decisions - faster, cleaner, and always up to date.",
+    slug: "ai-ml-development",
   },
   {
     title: "AI Consulting & Strategy",
     icon: icon,
-    desc: "Not sure where to start? We'll map your automation journey and build it with you.",
+    desc: "Not sure where to start? We&apos;ll map your automation journey and build it with you.",
+    slug: "ai-consulting-strategy",
   },
 ];
 
@@ -64,9 +64,10 @@ export default function page() {
       <section className="py-section">
         <div className="wrapper grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {cards.map((card) => (
-            <div
+            <Link
               key={card.title}
-              className="bg-[#F5F5F6] p-10 flex flex-col justify-between min-h-[220px]"
+              href={`/solutions/${card.slug}`}
+              className="bg-[#F5F5F6] p-10 flex flex-col justify-between min-h-[220px] cursor-pointer group"
             >
               <Image
                 src={card.icon.src}
@@ -86,7 +87,7 @@ export default function page() {
               <Button variant="outline" className="w-fit">
                 Explore
               </Button>
-            </div>
+            </Link>
           ))}
         </div>
       </section>
