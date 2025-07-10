@@ -52,7 +52,7 @@ const navLinks = [
       { href: "/platforms/make", label: "Make" },
       { href: "/platforms/vapi", label: "Vapi" },
       { href: "/platforms/n8n", label: "N8N" },
-      { href: "/platforms/Shopify", label: "Shopify AI" },
+      { href: "/platforms/shopify", label: "Shopify AI" },
     ],
   },
   { href: "/pricing", label: "Pricing" },
