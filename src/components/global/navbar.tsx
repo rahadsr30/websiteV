@@ -42,7 +42,19 @@ const navLinks = [
       },
     ],
   },
-  { href: "/resources", label: "Resources" },
+  {
+    href: "/platforms",
+    label: "Platforms & Integrations",
+    dropdown: true,
+    dropdownItems: [
+      { href: "/platforms/voiceflow", label: "Voiceflow" },
+      { href: "/platforms/chatbot", label: "Chatbot" },
+      { href: "/platforms/make", label: "Make" },
+      { href: "/platforms/vapi", label: "Vapi" },
+      { href: "/platforms/n8n", label: "N8N" },
+      { href: "/platforms/Shopify", label: "Shopify AI" },
+    ],
+  },
   { href: "/pricing", label: "Pricing" },
   {
     href: "/more",
@@ -130,7 +142,12 @@ export function Navbar() {
 
         {/* Mobile Menu Button */}
         <div className="md:hidden">
-          <button onClick={() => setIsOpen(!isOpen)}>
+          <button
+            onClick={() => {
+              setIsOpen(!isOpen);
+              setOpenDropdown(null); // Close any open dropdowns when toggling mobile menu
+            }}
+          >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
@@ -190,8 +207,8 @@ export function Navbar() {
         </div>
       )}
 
-      {/* Overlay to close dropdown when clicking outside */}
-      {openDropdown && (
+      {/* Overlay to close dropdown when clicking outside - desktop only */}
+      {openDropdown && !isOpen && (
         <div className="fixed inset-0 z-40" onClick={closeDropdown} />
       )}
     </header>
