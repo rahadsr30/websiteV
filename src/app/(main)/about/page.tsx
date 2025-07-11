@@ -4,9 +4,9 @@ import React from "react";
 import heorImage from "@/assets/industry/industrie.png";
 import aboutImage1 from "@/assets/solution/solutionHero.png";
 import aboutImage2 from "@/assets/service.png";
-import aboutImage3 from "@/assets/platform/platformCase1.png";
-import aboutImage4 from "@/assets/solution/successstory1.png";
+import aboutImage3 from "@/assets/about/about1.jpg";
 import aboutImage5 from "@/assets/industry/hcasestudy3.png";
+import aboutImage6 from "@/assets/about/about2.jpg";
 
 const aboutus = [
   {
@@ -87,7 +87,7 @@ const aboutus = [
     description:
       "We’re a fully distributed, global team of developers, designers, product thinkers, data engineers, and AI specialists. We work lean, move fast, and focus on the few things that matter: speed, clarity, and measurable outcomes.",
     buttonText: "Read More",
-    image: aboutImage4,
+    image: aboutImage6,
   },
 ];
 
