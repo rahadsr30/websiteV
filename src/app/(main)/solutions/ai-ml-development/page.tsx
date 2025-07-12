@@ -322,7 +322,7 @@ export default function Page() {
             <h2 className="section-title-medium text-[#0A0A0B] max-w-lg">
               What AI/ML Looks Like in the Real World
             </h2>
-            <Button className="mt-3 md:mt-0">Explore Case Studies</Button>
+            <Button className="mt-3 md:mt-0">Explore Use Cases</Button>
           </div>
 
           <div className="space-y-16">

@@ -6,7 +6,6 @@ import iconnn2 from "@/assets/iconnn2.png";
 import benifitIcon from "@/assets/solution/solutionIcon.png";
 import caseStudyImage1 from "@/assets/solution/successstory1.png";
 import caseStudyImage2 from "@/assets/solution/successstory2.png";
-import caseStudyImage3 from "@/assets/solution/successstory3.png";
 import Plugin from "../../plugin";
 import React, { useState, useEffect } from "react";
 import blogImage1 from "@/assets/blog/blog1.png";
@@ -22,151 +21,139 @@ const testimonials = [
     image: blogImage1,
     avatar: avater1,
     name: "Michael Johnson",
-    title: "Lara H., Head of CX at BristlePay (Fintech)",
-    text: "“We replaced 80% of our live chat traffic with a single AI assistant. It doesn’t just answer FAQs—it routes, books, and escalates like a pro.”",
+    title: "Kael M., Co-Founder at AutomarkIQ (Marketing Automation Agency)",
+    text: "“Vsenk helped us go from an idea to a fully functional AI automation agency in 45 days. We onboarded our first 6 clients before we even finished the website.”",
     hasPlay: false,
   },
   {
     image: blogImage2,
     avatar: avater2,
     name: "Rokibul Hasan Rahat",
-    title: "Marcus T., Product Manager at Learnova (EdTech)",
-    text: "“We launched an AI chatbot for onboarding new course users—and reduced our human support time by 50% in the first month.”",
+    title: "Mena O., CEO at Flowfoundry (Web & App Dev Agency)",
+    text: "“Our dev shop was drowning in client tasks. Vsenk built a white-label AI stack that handles 80% of onboarding and support—and our profit margins jumped by 60%.”",
     hasPlay: true,
   },
   {
     image: blogImage3,
     avatar: avater3,
     name: "David Chen",
-    title: "Rina M., Operations Lead at VaultEdge (Workplace Tech)",
-    text: "“Vsenk’s team helped us design a virtual HR assistant that actually gets used. Employees now get policy answers in seconds, not hours.”",
+    title: "Lucas G., Founder at LaunchSynth (Solo AI Consultant)",
+    text: "“We wanted to productize AI consulting but didn’t know where to start. Vsenk gave us a brand, a stack, and an actual business model.”",
     hasPlay: true,
   },
   {
-    image: blogImage2,
-    avatar: avater2,
-    name: "Rokibul Hasan Rahat",
-    title: "Lara H., Head of CX at BristlePay (Fintech)",
-    text: "“We replaced 80% of our live chat traffic with a single AI assistant. It doesn’t just answer FAQs—it routes, books, and escalates like a pro.”",
-    hasPlay: true,
+    image: blogImage1,
+    avatar: avater1,
+    name: "Michael Johnson",
+    title: "Kael M., Co-Founder at AutomarkIQ (Marketing Automation Agency)",
+    text: "“Vsenk helped us go from an idea to a fully functional AI automation agency in 45 days. We onboarded our first 6 clients before we even finished the website.”",
+    hasPlay: false,
   },
 ];
 
 const steps = [
   {
     number: "01",
-    title: "Discovery & Use Case Mapping",
+    title: "Agency Blueprint & Market Positioning",
     description:
-      "We identify where chatbots can make the most impact—support, lead gen, internal ops, or onboarding—and define the user journey.",
+      "We help define your value proposition, target use cases, and productized AI service offers—whether you're launching or pivoting.",
   },
   {
     number: "02",
-    title: "Conversational Design & Training",
+    title: "Tool Stack, Workflows & Branding",
     description:
-      "We design natural, on-brand conversations and train your assistant using NLP models with real data, FAQs, and context.",
+      "We build your backend—CRM, automation systems, chatbots, analytics—fully white-labeled and branded to your agency.",
   },
   {
     number: "03",
-    title: "Launch & Integrate",
+    title: "Team Training & Launch Support",
     description:
-      "Your assistant goes live across web, WhatsApp, Slack, or wherever your users are—with full analytics and human fallback when needed.",
+      "We equip your team with AI playbooks, SOPs, onboarding flows, and sales collateral to start selling from week one.",
   },
 ];
 
 const benefits = [
   {
-    title: "24/7 Instant Support",
+    title: "Everything Set Up for You",
     icon: benifitIcon,
     description:
-      "Always available, always fast. No wait times. No support queues.",
+      "From CRM to client onboarding flows to chatbot templates—fully configured, fully branded.",
   },
   {
-    title: "Brand-Aligned Conversations",
+    title: "Sell AI Without Coding It",
     icon: benifitIcon,
     description:
-      "Custom tone, personality, and logic—your assistant sounds like you.",
+      "Offer AI automation, chatbots, and workflows to your clients using ready-to-deploy solutions.",
   },
   {
-    title: "Omnichannel Presence",
+    title: "Designed to Scale",
     icon: benifitIcon,
     description:
-      "Web chat, SMS, WhatsApp, Slack, or Messenger—your bot meets customers where they are.",
+      "Built with automation and growth in mind—handle 1 to 100+ clients without drowning in ops.",
   },
   {
-    title: "Lead Qualification & Booking",
+    title: "White-Label Friendly",
     icon: benifitIcon,
     description:
-      "Turn conversations into meetings, sign-ups, and sales—automatically.",
+      "Your name. Your brand. Our engine. From dashboards to email sequences.",
   },
   {
-    title: "Human Handoff Included",
+    title: "Ongoing Support",
     icon: benifitIcon,
     description:
-      "Chatbots escalate to humans when needed, without losing the context.",
+      "We don’t just hand you the keys—we help you drive. Ongoing updates and consulting included.",
   },
-  // {
-  //   title: "Built-In Analytics",
-  //   icon: benifitIcon,
-  //   description:
-  //     "Track questions, drop-offs, conversions, and optimize continuously.",
-  // },
 ];
 
 const industries = [
-  "AI for E-commerce & Retail",
-  "Chatbots for Healthcare & Insurance",
-  "Internal AI Assistants for HR & Ops",
-  "Chatbots for Education & Training",
+  "AI Agencies for Marketing & SEO",
+  "White-Labeled AI for Web & App Dev Shops",
+  "Internal AI Teams for Corporate Innovation",
+  "Agencies Serving E-Commerce, SaaS & Education",
+  "Automation Consulting for Freelancers & Coaches",
 ];
 
 const successStories = [
   {
-    title: "Amtrak – Virtual Travel Assistant",
+    title: "Viral Nation – Scaling AI-Powered Influencer Campaigns",
     description:
-      "Amtrak’s AI-powered chatbot “Julie” handles over 5 million inquiries a year, helping customers book tickets, find schedules, and change reservations—reducing human agent load significantly.",
+      "Viral Nation launched a service layer using AI-powered audience insights and campaign prediction models, reducing manual analysis time by 70%.",
     buttonText: "Read Full Case Study",
     image: caseStudyImage1,
   },
   {
-    title: "Lemonade – Insurance Claims Bot",
+    title: "Growth Collective – AI Freelancer Matching Engine",
     description:
-      "Lemonade’s AI bot “Jim” handles claims in minutes, not days—settling over 30% of claims instantly, improving customer satisfaction while slashing processing costs.",
+      "Built a proprietary system to match clients with top freelancers using NLP + profile data. Client matching time dropped from 48 hours to under 10 minutes.",
     buttonText: "Read Full Case Study",
     image: caseStudyImage2,
-  },
-  {
-    title: "Kuki Chatbot – Ecommerce Lead Gen",
-    description:
-      "Kuki AI-powered bots on retail sites like Redbubble and Carro increased cart recovery by 15% through proactive conversation nudges and discount logic.",
-    buttonText: "Read Full Case Study",
-    image: caseStudyImage3,
   },
 ];
 
 const faqData = [
   {
     id: "benefits",
-    question: "Can your chatbots handle multiple languages?",
+    question: "Is this only for new agencies?",
     answer:
-      "Yes. We support multilingual models and can train your assistant to speak in English, Spanish, French, and more.",
+      "No. We work with both new and established businesses looking to pivot into or scale AI offerings.",
   },
   {
     id: "diagnosis",
-    question: "Will it integrate with our existing support tools?",
+    question: "Can we white-label everything?",
     answer:
-      "Absolutely. We can plug into most CRM and support platforms, including Zendesk, Intercom, HubSpot, and custom APIs.",
+      "Yes. From chatbots to CRM to emails and reporting dashboards, everything can be customized to your brand.",
   },
   {
     id: "security",
-    question: "What if users ask something the bot doesn’t know?",
+    question: "What tools do you set up?",
     answer:
-      "The bot will escalate to a human agent with full conversation context. No dead ends.",
+      "We tailor it to your business, but common setups include CRM, automation workflows, chatbots, analytics, client portals, and proposal templates.",
   },
   {
     id: "patient-care",
-    question: "How long does setup take?",
+    question: "How fast can we launch?",
     answer:
-      "Most MVP assistants are live in 2–4 weeks, depending on complexity and platform.",
+      "Most agencies are live and ready to sell within 3–5 weeks depending on scope and responsiveness.",
   },
 ];
 
@@ -219,15 +206,16 @@ export default function Page() {
         <div className="wrapper grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-20 items-center">
           <div>
             <h2 className="text-[#0A0A0B] section-title mb-4 lg:mb-6">
-              Your Smartest Team Member Works 24/7—and Never Sleeps
+              Launch an AI Agency That Runs Smarter, Sells Faster, and Scales
+              Cleanly
             </h2>
             <p className="text-[#3A3A3F] section-description">
-              We build AI chatbots and virtual assistants that don’t just talk —
-              they solve problems, answer questions, close leads, and never get
-              tired.
+              From tools to talent to tech stack, Vsenk helps you build a fully
+              operational AI-powered agency—ready to sell, serve, and scale from
+              day one.
             </p>
             <Button className="mt-6 lg:mt-10">
-              Request a Free Chatbot Demo
+              Schedule Your AI Agency Setup Call
             </Button>
           </div>
           <div>
@@ -244,11 +232,12 @@ export default function Page() {
         <div className="wrapper">
           <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-8 lg:mb-16">
             <h2 className="section-title-medium text-[#0A0A0B] mb-2 lg:mb-0 max-w-screen-sm">
-              From Script to Smart AI—Here’s How We Build It
+              Done-for-You AI Agency Infrastructure—Without the Guesswork
             </h2>
             <p className="max-w-md text-[#3A3A3F] section-description">
-              Every chatbot we deliver is trained to sound like your brand and
-              function like a real team member.
+              We combine automation, white-labeled tools, pre-built workflows,
+              and training into a single, streamlined setup. All you need is a
+              market.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1">
@@ -308,7 +297,7 @@ export default function Page() {
           <h2 className="section-title text-[#0C2217] section-title text-center mb-8 lg:mb-16">
             Built for Your Industry
           </h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-1">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-1">
             {industries.map((industry, index) => (
               <p
                 key={index}
@@ -324,8 +313,8 @@ export default function Page() {
       <section className="py-section bg-white">
         <div className="wrapper">
           <div className="mb-8 lg:mb-16 flex flex-wrap items-start justify-between gap-4">
-            <h2 className="section-title-medium text-[#0A0A0B] max-w-[700px]">
-              Where AI Assistants Are Already Making a Difference
+            <h2 className="section-title-medium text-[#0A0A0B] max-w-screen-md">
+              Agencies Are Already Winning With AI—Here’s How
             </h2>
             <Button className="mt-3 md:mt-0">Explore Use Cases</Button>
           </div>
@@ -482,14 +471,14 @@ export default function Page() {
 
       <section className="py-section wrapper">
         <div className="text-center py-10 lg:py-20 px-10 lg:px-0 bg-cover bg-center bg-no-repeat bg-[url('/vcta.png')]">
-          <h2 className="section-title text-white mb-3 max-w-screen-sm mx-auto">
-            Let’s Build an Assistant That Pays for Itself
+          <h2 className="section-title text-white mb-3 max-w-screen-md mx-auto">
+            Launch Smarter. Scale Faster. Own the AI Conversation.
           </h2>
           <p className="text-[#FFF] section-description max-w-screen-sm mx-auto mb-6 lg:mb-10">
-            Your team deserves to focus on higher-value work. We’ll help your AI
-            assistant handle the rest—fast, accurately, and always on.
+            Whether you&apos;re pivoting or just starting, we&apos;ll help you
+            build a profitable, scalable AI agency from the inside out.
           </p>
-          <Button variant="ghost">Request a Free Chatbot Demo</Button>
+          <Button variant="ghost">Schedule Your AI Agency Setup Call</Button>
         </div>
       </section>
     </>

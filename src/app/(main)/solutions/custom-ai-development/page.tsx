@@ -22,122 +22,116 @@ const testimonials = [
     image: blogImage1,
     avatar: avater1,
     name: "Michael Johnson",
-    title: "Lara H., Head of CX at BristlePay (Fintech)",
-    text: "“We replaced 80% of our live chat traffic with a single AI assistant. It doesn’t just answer FAQs—it routes, books, and escalates like a pro.”",
+    title: "Tayo S., CTO at Mediforma (Healthcare SaaS)",
+    text: "“We couldn’t find a platform that could handle our specific claims pipeline—so Vsenk built one. The end result is now one of our biggest operational assets.”",
     hasPlay: false,
   },
   {
     image: blogImage2,
     avatar: avater2,
     name: "Rokibul Hasan Rahat",
-    title: "Marcus T., Product Manager at Learnova (EdTech)",
-    text: "“We launched an AI chatbot for onboarding new course users—and reduced our human support time by 50% in the first month.”",
+    title: "Josh R., Founder at Legentrix (Legal Tech)",
+    text: "“Vsenk helped us launch a custom document parser trained on our proprietary legal data. It now does the work of three analysts in seconds.”",
     hasPlay: true,
   },
   {
     image: blogImage3,
     avatar: avater3,
     name: "David Chen",
-    title: "Rina M., Operations Lead at VaultEdge (Workplace Tech)",
-    text: "“Vsenk’s team helped us design a virtual HR assistant that actually gets used. Employees now get policy answers in seconds, not hours.”",
+    title: "Nina C., CPO at Loopwise (Retail AI Platform)",
+    text: "“We wanted an AI engine that felt like part of our product—not an add-on. Vsenk nailed the integration, UX, and long-term reliability.”",
     hasPlay: true,
   },
   {
-    image: blogImage2,
-    avatar: avater2,
-    name: "Rokibul Hasan Rahat",
-    title: "Lara H., Head of CX at BristlePay (Fintech)",
-    text: "“We replaced 80% of our live chat traffic with a single AI assistant. It doesn’t just answer FAQs—it routes, books, and escalates like a pro.”",
-    hasPlay: true,
+    image: blogImage1,
+    avatar: avater1,
+    name: "Michael Johnson",
+    title: "Tayo S., CTO at Mediforma (Healthcare SaaS)",
+    text: "“We couldn’t find a platform that could handle our specific claims pipeline—so Vsenk built one. The end result is now one of our biggest operational assets.”",
+    hasPlay: false,
   },
 ];
 
 const steps = [
   {
     number: "01",
-    title: "Discovery & Use Case Mapping",
+    title: "Problem Framing & Data Strategy",
     description:
-      "We identify where chatbots can make the most impact—support, lead gen, internal ops, or onboarding—and define the user journey.",
+      "We dig deep into your business challenge, identify the right AI approach, and prepare your data for training and development.",
   },
   {
     number: "02",
-    title: "Conversational Design & Training",
+    title: "Model & System Development",
     description:
-      "We design natural, on-brand conversations and train your assistant using NLP models with real data, FAQs, and context.",
+      "From scratch or fine-tuned, we design ML models, decision systems, or automation workflows to meet your specs.",
   },
   {
     number: "03",
-    title: "Launch & Integrate",
+    title: "Testing, Integration & Support",
     description:
-      "Your assistant goes live across web, WhatsApp, Slack, or wherever your users are—with full analytics and human fallback when needed.",
+      "We validate performance, integrate with your stack, and provide ongoing support to keep your AI system sharp, secure, and reliable.",
   },
 ];
 
 const benefits = [
   {
-    title: "24/7 Instant Support",
+    title: "Tailored to Your Data & Workflow",
     icon: benifitIcon,
     description:
-      "Always available, always fast. No wait times. No support queues.",
+      "No guesswork. No generic tools. Just precision-fit AI for your business.",
   },
   {
-    title: "Brand-Aligned Conversations",
+    title: "Build Anything—Not Just Chatbots",
     icon: benifitIcon,
     description:
-      "Custom tone, personality, and logic—your assistant sounds like you.",
+      "Recommendation engines, fraud detection, document processing, custom LLMs, forecasting systems—you name it.",
   },
   {
-    title: "Omnichannel Presence",
+    title: "Speed Without Sacrifice",
     icon: benifitIcon,
     description:
-      "Web chat, SMS, WhatsApp, Slack, or Messenger—your bot meets customers where they are.",
+      "We move fast, but never cut corners. Our agile process keeps stakeholders involved without slowing things down.",
   },
   {
-    title: "Lead Qualification & Booking",
+    title: "On-Prem or Cloud-Ready",
     icon: benifitIcon,
     description:
-      "Turn conversations into meetings, sign-ups, and sales—automatically.",
+      "Deploy where you want—AWS, Azure, GCP, private cloud, or hybrid systems.",
   },
   {
-    title: "Human Handoff Included",
+    title: "Secure & Scalable",
     icon: benifitIcon,
-    description:
-      "Chatbots escalate to humans when needed, without losing the context.",
+    description: "Your data stays yours. Your system scales as you grow.",
   },
-  // {
-  //   title: "Built-In Analytics",
-  //   icon: benifitIcon,
-  //   description:
-  //     "Track questions, drop-offs, conversions, and optimize continuously.",
-  // },
 ];
 
 const industries = [
-  "AI for E-commerce & Retail",
-  "Chatbots for Healthcare & Insurance",
-  "Internal AI Assistants for HR & Ops",
-  "Chatbots for Education & Training",
+  "AI for Fintech & Fraud Detection",
+  "AI in Healthcare & Insurance",
+  "Manufacturing & Predictive Systems",
+  "Logistics Optimization",
+  "Content, Media & Recommendation Systems",
 ];
 
 const successStories = [
   {
-    title: "Amtrak – Virtual Travel Assistant",
+    title: "Anthem – AI-Powered Claims Automation",
     description:
-      "Amtrak’s AI-powered chatbot “Julie” handles over 5 million inquiries a year, helping customers book tickets, find schedules, and change reservations—reducing human agent load significantly.",
+      "Anthem built a custom AI model to process and flag insurance claims, reducing manual review time by 60% and increasing processing accuracy.",
     buttonText: "Read Full Case Study",
     image: caseStudyImage1,
   },
   {
-    title: "Lemonade – Insurance Claims Bot",
+    title: "Klarna – Custom Recommendation Engine",
     description:
-      "Lemonade’s AI bot “Jim” handles claims in minutes, not days—settling over 30% of claims instantly, improving customer satisfaction while slashing processing costs.",
+      "Klarna developed its own AI system to recommend products, optimize UX, and personalize content—resulting in 25% higher CTR on shopping feeds.",
     buttonText: "Read Full Case Study",
     image: caseStudyImage2,
   },
   {
-    title: "Kuki Chatbot – Ecommerce Lead Gen",
+    title: "SentiLink – Fraud Detection with Custom ML",
     description:
-      "Kuki AI-powered bots on retail sites like Redbubble and Carro increased cart recovery by 15% through proactive conversation nudges and discount logic.",
+      "SentiLink created a proprietary machine learning model for synthetic identity detection, reducing fraud at fintech companies by up to 90%.",
     buttonText: "Read Full Case Study",
     image: caseStudyImage3,
   },
@@ -146,27 +140,27 @@ const successStories = [
 const faqData = [
   {
     id: "benefits",
-    question: "Can your chatbots handle multiple languages?",
+    question: "What kinds of custom AI do you build?",
     answer:
-      "Yes. We support multilingual models and can train your assistant to speak in English, Spanish, French, and more.",
+      "Everything from NLP models and recommendation systems to fraud detection engines, forecasting tools, and internal decision-making systems.",
   },
   {
     id: "diagnosis",
-    question: "Will it integrate with our existing support tools?",
+    question: "Do I need a big in-house tech team to work with you?",
     answer:
-      "Absolutely. We can plug into most CRM and support platforms, including Zendesk, Intercom, HubSpot, and custom APIs.",
+      "Not at all. We work with startups and enterprise teams alike and can lead both strategy and implementation.",
   },
   {
     id: "security",
-    question: "What if users ask something the bot doesn’t know?",
+    question: "How do you ensure data privacy?",
     answer:
-      "The bot will escalate to a human agent with full conversation context. No dead ends.",
+      "We comply with global data standards (GDPR, HIPAA where needed) and offer secure deployment options including on-prem and private cloud.",
   },
   {
     id: "patient-care",
-    question: "How long does setup take?",
+    question: "What’s the typical development timeline?",
     answer:
-      "Most MVP assistants are live in 2–4 weeks, depending on complexity and platform.",
+      "Most custom AI builds take 4–12 weeks from discovery to deployment depending on complexity and data readiness.",
   },
 ];
 
@@ -219,15 +213,15 @@ export default function Page() {
         <div className="wrapper grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-20 items-center">
           <div>
             <h2 className="text-[#0A0A0B] section-title mb-4 lg:mb-6">
-              Your Smartest Team Member Works 24/7—and Never Sleeps
+              If Off-the-Shelf Doesn’t Fit, We Build What Does
             </h2>
             <p className="text-[#3A3A3F] section-description">
-              We build AI chatbots and virtual assistants that don’t just talk —
-              they solve problems, answer questions, close leads, and never get
-              tired.
+              From language models to predictive engines to automation systems,
+              Vsenk designs and develops custom AI tailored to your workflows,
+              data, and product goals.
             </p>
             <Button className="mt-6 lg:mt-10">
-              Request a Free Chatbot Demo
+              Request a Custom AI Build Consultation
             </Button>
           </div>
           <div>
@@ -244,11 +238,11 @@ export default function Page() {
         <div className="wrapper">
           <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-8 lg:mb-16">
             <h2 className="section-title-medium text-[#0A0A0B] mb-2 lg:mb-0 max-w-screen-sm">
-              From Script to Smart AI—Here’s How We Build It
+              Purpose-Built AI, Designed for the Way You Work
             </h2>
             <p className="max-w-md text-[#3A3A3F] section-description">
-              Every chatbot we deliver is trained to sound like your brand and
-              function like a real team member.
+              Our custom development process is engineered to reduce risk and
+              increase speed to value.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1">
@@ -308,7 +302,7 @@ export default function Page() {
           <h2 className="section-title text-[#0C2217] section-title text-center mb-8 lg:mb-16">
             Built for Your Industry
           </h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-1">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-1">
             {industries.map((industry, index) => (
               <p
                 key={index}
@@ -324,8 +318,8 @@ export default function Page() {
       <section className="py-section bg-white">
         <div className="wrapper">
           <div className="mb-8 lg:mb-16 flex flex-wrap items-start justify-between gap-4">
-            <h2 className="section-title-medium text-[#0A0A0B] max-w-[700px]">
-              Where AI Assistants Are Already Making a Difference
+            <h2 className="section-title-medium text-[#0A0A0B] max-w-screen-md">
+              AI Development Done Right—Real Results Across Industries
             </h2>
             <Button className="mt-3 md:mt-0">Explore Use Cases</Button>
           </div>
@@ -482,14 +476,17 @@ export default function Page() {
 
       <section className="py-section wrapper">
         <div className="text-center py-10 lg:py-20 px-10 lg:px-0 bg-cover bg-center bg-no-repeat bg-[url('/vcta.png')]">
-          <h2 className="section-title text-white mb-3 max-w-screen-sm mx-auto">
-            Let’s Build an Assistant That Pays for Itself
+          <h2 className="section-title text-white mb-3 max-w-screen-md mx-auto">
+            Let&apos;s Build the AI System You&apos;ve Been Thinking About
           </h2>
           <p className="text-[#FFF] section-description max-w-screen-sm mx-auto mb-6 lg:mb-10">
-            Your team deserves to focus on higher-value work. We’ll help your AI
-            assistant handle the rest—fast, accurately, and always on.
+            You&apos;ve got the data. We&apos;ve got the team to turn it into
+            something powerful. Let&apos;s make your AI idea real—with speed,
+            clarity, and precision.
           </p>
-          <Button variant="ghost">Request a Free Chatbot Demo</Button>
+          <Button variant="ghost">
+            Request a Custom AI Build Consultation
+          </Button>
         </div>
       </section>
     </>

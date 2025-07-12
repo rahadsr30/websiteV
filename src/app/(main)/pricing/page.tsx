@@ -538,7 +538,7 @@ export default function Page() {
                 <button
                   key={platform}
                   onClick={() => setActivePlatform(platform)}
-                  className={`px-4 py-2 card-title transition-all duration-200 ${
+                  className={`px-6 py-3 card-title transition-all duration-200 ${
                     activePlatform === platform
                       ? "bg-[#E5E6E8] text-[#0A0A0B]"
                       : "text-[#3A3A3F] hover:text-[#0A0A0B] hover:bg-gray-50"

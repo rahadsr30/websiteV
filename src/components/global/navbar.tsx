@@ -40,6 +40,14 @@ const navLinks = [
         href: "/solutions/crm-marketing-automation",
         label: "CRM & Marketing Automation",
       },
+      {
+        href: "/solutions/custom-ai-development",
+        label: "Custom AI Development",
+      },
+      {
+        href: "/solutions/ai-agency-setup",
+        label: "360° AI Agency Setup",
+      },
     ],
   },
   {
