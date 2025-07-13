@@ -8,49 +8,8 @@ import caseStudyImage1 from "@/assets/solution/successstory1.png";
 import caseStudyImage2 from "@/assets/solution/successstory2.png";
 import caseStudyImage3 from "@/assets/solution/successstory3.png";
 import Plugin from "../../plugin";
-import React, { useState, useEffect } from "react";
-import blogImage1 from "@/assets/blog/blog1.png";
-import blogImage2 from "@/assets/blog/blog2.png";
-import blogImage3 from "@/assets/blog/blog3.png";
-import avater1 from "@/assets/blog/bavater1.png";
-import avater2 from "@/assets/blog/bavater2.png";
-import avater3 from "@/assets/blog/bavater3.png";
-import { IoIosArrowRoundBack, IoIosArrowRoundForward } from "react-icons/io";
-
-const testimonials = [
-  {
-    image: blogImage1,
-    avatar: avater1,
-    name: "Michael Johnson",
-    title: "Lara H., Head of CX at BristlePay (Fintech)",
-    text: "“We replaced 80% of our live chat traffic with a single AI assistant. It doesn’t just answer FAQs—it routes, books, and escalates like a pro.”",
-    hasPlay: false,
-  },
-  {
-    image: blogImage2,
-    avatar: avater2,
-    name: "Rokibul Hasan Rahat",
-    title: "Marcus T., Product Manager at Learnova (EdTech)",
-    text: "“We launched an AI chatbot for onboarding new course users—and reduced our human support time by 50% in the first month.”",
-    hasPlay: true,
-  },
-  {
-    image: blogImage3,
-    avatar: avater3,
-    name: "David Chen",
-    title: "Rina M., Operations Lead at VaultEdge (Workplace Tech)",
-    text: "“Vsenk’s team helped us design a virtual HR assistant that actually gets used. Employees now get policy answers in seconds, not hours.”",
-    hasPlay: true,
-  },
-  {
-    image: blogImage2,
-    avatar: avater2,
-    name: "Rokibul Hasan Rahat",
-    title: "Lara H., Head of CX at BristlePay (Fintech)",
-    text: "“We replaced 80% of our live chat traffic with a single AI assistant. It doesn’t just answer FAQs—it routes, books, and escalates like a pro.”",
-    hasPlay: true,
-  },
-];
+import React, { useState } from "react";
+import Link from "next/link";
 
 const steps = [
   {
@@ -171,47 +130,6 @@ const faqData = [
 ];
 
 export default function Page() {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [cardsPerView, setCardsPerView] = useState(1);
-
-  useEffect(() => {
-    const updateCardsPerView = () => {
-      if (window.innerWidth >= 1024) {
-        setCardsPerView(3);
-      } else if (window.innerWidth >= 768) {
-        setCardsPerView(2);
-      } else {
-        setCardsPerView(1);
-      }
-    };
-
-    updateCardsPerView();
-    window.addEventListener("resize", updateCardsPerView);
-    return () => window.removeEventListener("resize", updateCardsPerView);
-  }, []);
-
-  const nextSlide = () => {
-    setCurrentIndex((prevIndex) => {
-      const maxIndex = testimonials.length - cardsPerView;
-      return prevIndex >= maxIndex ? 0 : prevIndex + 1;
-    });
-  };
-
-  const prevSlide = () => {
-    setCurrentIndex((prevIndex) => {
-      if (prevIndex === 0) {
-        const maxIndex = testimonials.length - cardsPerView;
-        return maxIndex > 0 ? maxIndex : 0;
-      }
-      return prevIndex - 1;
-    });
-  };
-
-  const visibleTestimonials = testimonials.slice(
-    currentIndex,
-    currentIndex + cardsPerView
-  );
-
   const [expandedFaq, setExpandedFaq] = useState("");
   return (
     <>
@@ -226,8 +144,8 @@ export default function Page() {
               they solve problems, answer questions, close leads, and never get
               tired.
             </p>
-            <Button className="mt-6 lg:mt-10">
-              Request a Free Chatbot Demo
+            <Button className="mt-6 lg:mt-10" asChild>
+              <Link href="/contact">Request a Free Chatbot Demo</Link>
             </Button>
           </div>
           <div>
@@ -327,7 +245,7 @@ export default function Page() {
             <h2 className="section-title-medium text-[#0A0A0B] max-w-[700px]">
               Where AI Assistants Are Already Making a Difference
             </h2>
-            <Button className="mt-3 md:mt-0">Explore Use Cases</Button>
+            {/* <Button className="mt-3 md:mt-0">Explore Use Cases</Button> */}
           </div>
 
           <div className="space-y-16">
@@ -357,9 +275,9 @@ export default function Page() {
                     {story.description}
                   </p>
 
-                  <Button variant="outline" className="w-fit">
+                  {/* <Button variant="outline" className="w-fit">
                     {story.buttonText}
-                  </Button>
+                  </Button> */}
                 </div>
               </div>
             ))}
@@ -368,80 +286,15 @@ export default function Page() {
       </section>
       <Plugin />
 
-      <section className="py-section bg-white">
-        <div className="wrapper">
-          <div className="flex flex-wrap justify-between items-start mb-8 lg:mb-16">
-            <div>
-              <h2 className="section-title-medium text-[#0A0A0B] mb-2 lg:mb-0">
-                Business Owners
-                <br />
-                Feels the Magic
-              </h2>
-            </div>
-            <div className="max-w-md text-[#3A3A3F] section-description">
-              Hear how businesses like yours are scaling faster and smarter with
-              our AI automation solutions.
-            </div>
-          </div>
-          <div className="flex gap-6 justify-center items-stretch">
-            {visibleTestimonials.map((t, i) => (
-              <div
-                key={currentIndex + i}
-                className="bg-[#F5F5F6] p-6 flex flex-col flex-1 w-full lg:max-w-sm min-h-full"
-              >
-                <div className={`mb-4${t.hasPlay ? " relative" : ""}`}>
-                  <Image
-                    src={t.image}
-                    alt={t.name}
-                    width={500}
-                    height={500}
-                    className="w-full object-cover h-48"
-                  />
-                </div>
-                <p className="text-[#3A3A3F] card-title mt-5 flex-grow">
-                  &ldquo;{t.text}&rdquo;
-                </p>
-                <div className="flex items-center mt-10">
-                  <Image
-                    src={t.avatar}
-                    alt={t.name}
-                    className="w-16 h-16 rounded-full mr-3"
-                  />
-                  <div>
-                    <div className="font-[#0A0A0B] section-description-medium mb-2">
-                      {t.name}
-                    </div>
-                    <div className="text-xs text-[#3A3A3F">{t.title}</div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <div className="flex justify-between mt-8 lg:mt-10">
-            <button
-              onClick={prevSlide}
-              className="card-title text-[#3A3A3F] hover:text-black transition-colors"
-            >
-              <IoIosArrowRoundBack className="text-3xl" />
-            </button>
-            <button
-              onClick={nextSlide}
-              className="card-title text-[#3A3A3F] hover:text-black transition-colors"
-            >
-              <IoIosArrowRoundForward className="text-3xl" />
-            </button>
-          </div>
-        </div>
-      </section>
-
       <section className="py-section">
         <div className="wrapper">
           <div className="mb-8 lg:mb-16 flex flex-wrap items-start justify-between gap-4">
             <h2 className="section-title-medium text-[#0A0A0B]">
               Freaquently Asked <br /> Questions
             </h2>
-            <Button className="mt-3 md:mt-0">Contact Us</Button>
+            <Button className="mt-3 md:mt-0" asChild>
+              <Link href="/contact">Contact Us</Link>
+            </Button>
           </div>
 
           <div className="space-y-4">
@@ -489,7 +342,9 @@ export default function Page() {
             Your team deserves to focus on higher-value work. We’ll help your AI
             assistant handle the rest—fast, accurately, and always on.
           </p>
-          <Button variant="ghost">Request a Free Chatbot Demo</Button>
+          <Button variant="ghost" asChild>
+            <Link href="/contact">Request a Free Chatbot Demo</Link>
+          </Button>
         </div>
       </section>
     </>
