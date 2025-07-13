@@ -130,7 +130,7 @@ export default function Vision() {
           )}
 
           {activeTab === "call" && (
-            <div className="bg-[#F5F5F6] p-6">
+            <div className="bg-[#F5F5F6] lg:p-6">
               <CalendlyEmbed url="https://calendly.com/vsenk/discovery-call" />
             </div>
           )}
