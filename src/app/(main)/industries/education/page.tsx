@@ -4,7 +4,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import healthcareHeroImage from "@/assets/industry/education/e1.jpg";
 import Plugin from "../../plugin";
-import News from "../../news";
+
 import icon from "@/assets/iconnn.png";
 import caseStudyImage1 from "@/assets/industry/education/e2.jpg";
 import caseStudyImage2 from "@/assets/industry/education/e3.jpg";
@@ -13,6 +13,7 @@ import challengeImage1 from "@/assets/industry/education/e5.jpg";
 import challengeImage2 from "@/assets/industry/education/e6.jpg";
 import challengeImage3 from "@/assets/industry/education/e7.jpg";
 import challengeImage4 from "@/assets/industry/education/e8.jpg";
+import Link from "next/link";
 // import challengeImage5 from "@/assets/industry/challenge5.png";
 
 const challenges = [
@@ -164,8 +165,8 @@ export default function Page() {
               education providers and institutions deploy AI that improves
               outcomes for students, faculty, and administrators.
             </p>
-            <Button className="mt-6 lg:mt-10">
-              Schedule an Education AI Demo
+            <Button className="mt-6 lg:mt-10" asChild>
+              <Link href="/contact">Schedule an Education AI Demo</Link>
             </Button>
           </div>
           <div>
@@ -204,9 +205,9 @@ export default function Page() {
                     {card.desc}
                   </p>
                 </div>
-                <Button variant="outline" className="w-fit">
+                {/* <Button variant="outline" className="w-fit">
                   Explore
-                </Button>
+                </Button> */}
               </div>
             ))}
           </div>
@@ -219,7 +220,7 @@ export default function Page() {
             <h2 className="section-title-medium text-[#0A0A0B] max-w-lg">
               Education Success Stories
             </h2>
-            <Button className="mt-3 md:mt-0">Explore Case Studies</Button>
+            {/* <Button className="mt-3 md:mt-0">Explore Case Studies</Button> */}
           </div>
 
           <div className="space-y-16">
@@ -265,9 +266,9 @@ export default function Page() {
                     ))}
                   </div>
 
-                  <Button variant="outline" className="w-fit">
+                  {/* <Button variant="outline" className="w-fit">
                     {story.buttonText}
-                  </Button>
+                  </Button> */}
                 </div>
               </div>
             ))}
@@ -328,7 +329,6 @@ export default function Page() {
       </section>
 
       <Plugin />
-      <News />
 
       <section className="py-section">
         <div className="wrapper">
@@ -336,7 +336,9 @@ export default function Page() {
             <h2 className="section-title-medium text-[#0A0A0B]">
               Freaquently Asked <br /> Questions
             </h2>
-            <Button className="mt-3 md:mt-0">Contact Us</Button>
+            <Button className="mt-3 md:mt-0" asChild>
+              <Link href="/contact">Contact Us</Link>
+            </Button>
           </div>
 
           <div className="space-y-4">
@@ -385,7 +387,9 @@ export default function Page() {
             implement AI that improves outcomes, scales delivery, and supports
             every learner.
           </p>
-          <Button variant="ghost">Book an AI Demo for Education</Button>
+          <Button variant="ghost" asChild>
+            <Link href="/contact">Book an AI Demo for Education</Link>
+          </Button>
         </div>
       </section>
     </>
