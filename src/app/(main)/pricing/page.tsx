@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import React, { useState } from "react";
 import heroImage from "@/assets/pricing/pricingHero.png";
+import Link from "next/link";
 
 interface Package {
   name: string;
@@ -474,8 +475,8 @@ export default function Page() {
               No hidden fees. No bloated retainers. Just AI solutions that grow
               with your business, from first chatbot to full-stack automation.
             </p>
-            <Button className="mt-6 lg:mt-10">
-              Schedule a Free Consultation
+            <Button className="mt-6 lg:mt-10" asChild>
+              <Link href="/contact">Schedule a Free Consultation</Link>
             </Button>
           </div>
           <div>
@@ -520,7 +521,9 @@ export default function Page() {
                     </li>
                   ))}
                 </ul>
-                <Button className="w-full mt-auto">Get Started</Button>
+                <Button className="w-full mt-auto" asChild>
+                  <Link href="/contact">Get Started</Link>
+                </Button>
               </div>
             ))}
           </div>
@@ -625,8 +628,9 @@ export default function Page() {
                       ? "bg-[#fff] text-[#0A0A0B] hover:bg-[#FFF]/90"
                       : "bg-[#0A0A0B] text-[#FFF] hover:bg-[#0A0A0B]/90"
                   }`}
+                  asChild
                 >
-                  Book a Call
+                  <Link href="/contact">Book a Call</Link>
                 </Button>
               </div>
             ))}
@@ -640,7 +644,9 @@ export default function Page() {
             <h2 className="section-title-medium text-[#0A0A0B]">
               Freaquently Asked <br /> Questions
             </h2>
-            <Button className="mt-3 md:mt-0">Contact Us</Button>
+            <Button className="mt-3 md:mt-0" asChild>
+              <Link href="/contact">Contact Us</Link>
+            </Button>
           </div>
 
           <div className="space-y-4">
@@ -684,7 +690,9 @@ export default function Page() {
           <h2 className="section-title text-white mb-3 max-w-screen-sm mx-auto">
             Let’s Build the Right AI Stack for You
           </h2>
-          <Button variant="ghost">Get Your Free Strategy Call</Button>
+          <Button variant="ghost" asChild>
+            <Link href="/contact">Get Your Free Strategy Call</Link>
+          </Button>
         </div>
       </section>
     </>

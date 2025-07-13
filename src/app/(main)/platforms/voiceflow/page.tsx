@@ -3,10 +3,10 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import React, { useState } from "react";
 import { HiCheckCircle } from "react-icons/hi2";
-import { BsArrowRight } from "react-icons/bs";
+// import { BsArrowRight } from "react-icons/bs";
 import heorImage from "@/assets/platform/platformHero.png";
 import icon from "@/assets/platform/platformIcon.png";
-import icon2 from "@/assets/platform/platformIcon2.png";
+// import icon2 from "@/assets/platform/platformIcon2.png";
 import powerUp from "@/assets/platform/PowerUp.png";
 import benifitIcon from "@/assets/solution/solutionIcon.png";
 import caseStudyImage1 from "@/assets/platform/platformCase1.png";
@@ -15,6 +15,7 @@ import caseStudyImage3 from "@/assets/platform/platformCase3.png";
 import caseStudyImage4 from "@/assets/platform/platformCase4.png";
 import caseStudyImage5 from "@/assets/platform/platformCase5.png";
 import caseStudyImage6 from "@/assets/platform/platformCase6.png";
+import Link from "next/link";
 
 export default function Page() {
   const integrations = [
@@ -156,28 +157,28 @@ export default function Page() {
     },
   ];
 
-  const documentationGuides = [
-    {
-      title: "How to Connect Voiceflow to Webhooks",
-      icon: icon2,
-    },
-    {
-      title: "Voiceflow + Airtable Integration Setup",
-      icon: icon2,
-    },
-    {
-      title: "Voiceflow WhatsApp Integration Guide",
-      icon: icon2,
-    },
-    {
-      title: "Using Make with Voiceflow",
-      icon: icon2,
-    },
-    {
-      title: "Custom CRM Integration Docs",
-      icon: icon2,
-    },
-  ];
+  // const documentationGuides = [
+  //   {
+  //     title: "How to Connect Voiceflow to Webhooks",
+  //     icon: icon2,
+  //   },
+  //   {
+  //     title: "Voiceflow + Airtable Integration Setup",
+  //     icon: icon2,
+  //   },
+  //   {
+  //     title: "Voiceflow WhatsApp Integration Guide",
+  //     icon: icon2,
+  //   },
+  //   {
+  //     title: "Using Make with Voiceflow",
+  //     icon: icon2,
+  //   },
+  //   {
+  //     title: "Custom CRM Integration Docs",
+  //     icon: icon2,
+  //   },
+  // ];
 
   const faqData = [
     {
@@ -221,8 +222,10 @@ export default function Page() {
               your tools, APIs, and data sources, so your AI conversations
               actually drive business outcomes.
             </p>
-            <Button className="mt-6 lg:mt-10">
-              Talk to a Voiceflow Integration Expert
+            <Button className="mt-6 lg:mt-10" asChild>
+              <Link href="/contact">
+                Talk to a Voiceflow Integration Expert
+              </Link>
             </Button>
           </div>
           <div>
@@ -319,7 +322,7 @@ export default function Page() {
             <h2 className="section-title-medium text-[#0A0A0B] max-w-[700px]">
               Real-World Applications of Vsenk’s Platform Integrations
             </h2>
-            <Button className="mt-3 md:mt-0">Explore Use Cases </Button>
+            {/* <Button className="mt-3 md:mt-0">Explore Use Cases </Button> */}
           </div>
 
           <div className="space-y-16">
@@ -362,10 +365,10 @@ export default function Page() {
                       </div>
                     ))}
                   </div>
-
+                  {/* 
                   <Button variant="outline" className="w-fit">
                     {story.buttonText}
-                  </Button>
+                  </Button> */}
                 </div>
               </div>
             ))}
@@ -379,7 +382,7 @@ export default function Page() {
             <h2 className="section-title-medium text-[#0A0A0B] max-w-lg">
               Bringing Voice AI Ideas to Life
             </h2>
-            <Button className="mt-3 md:mt-0">Explore Case Studies</Button>
+            {/* <Button className="mt-3 md:mt-0">Explore Case Studies</Button> */}
           </div>
 
           <div className="space-y-16">
@@ -425,9 +428,9 @@ export default function Page() {
                     ))}
                   </div>
 
-                  <Button variant="outline" className="w-fit">
+                  {/* <Button variant="outline" className="w-fit">
                     {story.buttonText}
-                  </Button>
+                  </Button> */}
                 </div>
               </div>
             ))}
@@ -435,7 +438,7 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="py-section bg-white">
+      {/* <section className="py-section bg-white">
         <div className="wrapper">
           <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-8 lg:mb-16">
             <h2 className="section-title-medium text-[#0A0A0B] mb-2 lg:mb-0 max-w-screen-sm">
@@ -467,7 +470,7 @@ export default function Page() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className="py-section">
         <div className="wrapper">
@@ -475,7 +478,9 @@ export default function Page() {
             <h2 className="section-title-medium text-[#0A0A0B]">
               Freaquently Asked <br /> Questions
             </h2>
-            <Button className="mt-3 md:mt-0">Contact Us</Button>
+            <Button className="mt-3 md:mt-0" asChild>
+              <Link href="/contact">Contact Us</Link>
+            </Button>
           </div>
 
           <div className="space-y-4">
@@ -524,7 +529,9 @@ export default function Page() {
             integrated assistants that take action, automate work, and deliver
             results.
           </p>
-          <Button variant="ghost">Book a Voiceflow Integration Demo</Button>
+          <Button variant="ghost" asChild>
+            <Link href="/contact">Book a Voiceflow Integration Demo</Link>
+          </Button>
         </div>
       </section>
     </>
