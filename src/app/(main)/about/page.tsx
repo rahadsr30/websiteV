@@ -17,7 +17,6 @@ const aboutus = [
     We&apos;re not an agency chasing buzzwords. We&apos;re a product-driven, client-obsessed team that helps startups, enterprises, and agencies integrate AI that solves real problems, without overcomplicating the process.
     Whether it&apos;s automating support, launching intelligent workflows, or building custom GPT-powered tools, we focus on the end goal: making your team faster, your product smarter, and your ops smoother.
     `,
-    buttonText: "Read More",
     image: aboutImage3,
   },
   {
@@ -25,7 +24,7 @@ const aboutus = [
     subtitle: "Build AI that's practical, ethical, and built for business.",
     description:
       "We believe artificial intelligence should be as useful as it is powerful. That&apos;s why we&apos;re on a mission to help companies automate with intention, scale with clarity, and unlock the kind of efficiency that turns goals into growth.",
-    buttonText: "Read More",
+
     image: aboutImage2,
   },
   {
@@ -68,7 +67,6 @@ const aboutus = [
         </div>
       </div>
     ),
-    buttonText: "Read More",
     image: aboutImage1,
   },
 
@@ -80,14 +78,12 @@ const aboutus = [
     We’re fluent in platforms like OpenAI, Voiceflow, Vapi, Zapier, Make, Shopify, n8n, Salesforce, and others.
     We back everything with real strategy, not "set it and forget it" setups.
     `,
-    buttonText: "Read More",
     image: aboutImage5,
   },
   {
     title: "Meet the Builders",
     description:
       "We’re a fully distributed, global team of developers, designers, product thinkers, data engineers, and AI specialists. We work lean, move fast, and focus on the few things that matter: speed, clarity, and measurable outcomes.",
-    buttonText: "Read More",
     image: aboutImage6,
   },
 ];
@@ -107,9 +103,9 @@ export default function Page() {
               strategists who believe AI should be useful, human-centered, and
               built to deliver actual results.
             </p>
-            <Button className="mt-6 lg:mt-10">
-              <Link href="/contact">Talk to Our Team</Link>
-            </Button>
+            <Link href="/contact">
+              <Button className="mt-6 lg:mt-10">Talk to Our Team</Button>
+            </Link>
           </div>
           <div>
             <Image
@@ -155,10 +151,6 @@ export default function Page() {
                 >
                   {item.description}
                 </div>
-
-                <Button variant="default" className="mt-6">
-                  {item.buttonText}
-                </Button>
               </div>
 
               <div
@@ -189,7 +181,9 @@ export default function Page() {
             here to help. No pressure. No pitch decks. Just clarity, experience,
             and practical solutions.
           </p>
-          <Button variant="ghost">Schedule a Free Consultation</Button>
+          <Link href="/contact">
+            <Button variant="ghost">Schedule a Free Consultation</Button>
+          </Link>
         </div>
       </section>
     </>
