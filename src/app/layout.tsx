@@ -19,10 +19,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} antialiased`}>
-        <GoogleAnalytics gaId="G-QRCMSBB601" />
-        {children}
-      </body>
+      <GoogleAnalytics gaId="G-QRCMSBB601" />
+      <body className={`${inter.className} antialiased`}>{children}</body>
     </html>
   );
 }
