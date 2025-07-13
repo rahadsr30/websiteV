@@ -98,7 +98,7 @@ export function Navbar() {
           </Link>
         </div>
 
-        <div className="hidden md:flex items-center space-x-6">
+        <div className="hidden lg:flex items-center space-x-6">
           {navLinks.map((link) => (
             <div key={link.label} className="relative group">
               {link.dropdown ? (
@@ -144,12 +144,12 @@ export function Navbar() {
           ))}
         </div>
 
-        <div className="hidden md:flex items-center">
+        <div className="hidden lg:flex items-center">
           <Button>Get Your Free Strategy Call</Button>
         </div>
 
         {/* Mobile Menu Button */}
-        <div className="md:hidden">
+        <div className="lg:hidden">
           <button
             onClick={() => {
               setIsOpen(!isOpen);
@@ -163,7 +163,7 @@ export function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-white px-6 pb-4">
+        <div className="lg:hidden bg-white px-6 pb-4">
           {navLinks.map((link) => (
             <div key={link.label} className="mb-2">
               {link.dropdown ? (

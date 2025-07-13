@@ -2,19 +2,23 @@ import React from "react";
 import Image from "next/image";
 import icon from "@/assets/iconnn3.png";
 import { cn } from "@/lib/utils";
+import phoneIcon from "@/assets/phoneIcon.png";
 
 const coreValues = [
   {
     title: "Innovation with Purpose",
     icon: icon,
+    phoneIcon: phoneIcon,
   },
   {
     title: "Radical Transparency",
     icon: icon,
+    phoneIcon: phoneIcon,
   },
   {
     title: "Growth Together",
     icon: icon,
+    phoneIcon: phoneIcon,
   },
 ];
 
@@ -74,10 +78,19 @@ export default function WhoWeAre() {
                       key={idx}
                       className="bg-[#F5F5F6] md:bg-white/10 backdrop-blur-sm p-4 flex-1 flex flex-col items-center text-[#0A0A0B] md:text-white"
                     >
+                      {/* Mobile - Show phone icon */}
+                      <Image
+                        src={value.phoneIcon}
+                        alt={value.title}
+                        className="w-8 h-8 mb-4 block md:hidden"
+                        width={32}
+                        height={32}
+                      />
+                      {/* Desktop - Show regular icon */}
                       <Image
                         src={value.icon}
                         alt={value.title}
-                        className="w-8 h-8 mb-4"
+                        className="w-8 h-8 mb-4 hidden md:block"
                         width={32}
                         height={32}
                       />
