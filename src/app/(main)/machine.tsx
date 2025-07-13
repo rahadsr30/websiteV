@@ -1,33 +1,45 @@
-import React from "react";
+import { Button } from "@/components/ui/button";
 import icon from "@/assets/iconnn.png";
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const cards = [
   {
     title: "AI Chatbots & Virtual Assistants",
     icon: icon,
     desc: "Trained on your data. Speaking in your tone. Always-on customer service that doesn't burn out.",
+    href: "/solutions/chatbots-virtual-assistants",
   },
   {
     title: "CRM & Marketing Automation",
     icon: icon,
     desc: "Lead nurturing without the manual grind. Keep your funnel warm while your team closes.",
+    href: "/solutions/crm-marketing-automation",
   },
   {
     title: "AI/ML Development",
     icon: icon,
     desc: "Custom-built intelligence that fits your workflow, not a one-size-fits-none platform.",
+    href: "/solutions/ai-ml-development",
   },
   {
-    title: "Data & Analytics Automation",
+    title: "Custom AI Development",
     icon: icon,
-    desc: "From raw data to real decisions - faster, cleaner, and always up to date.",
+    // write a description for this card
+    desc: "",
+    href: "/solutions/custom-ai-development",
   },
   {
     title: "AI Consulting & Strategy",
     icon: icon,
     desc: "Not sure where to start? We'll map your automation journey and build it with you.",
+    href: "/solutions/ai-consulting-strategy",
+  },
+  {
+    title: "360° AI Agency Setup",
+    icon: icon,
+    desc: "Not sure where to start? We'll map your automation journey and build it with you.",
+    href: "/solutions/ai-agency-setup",
   },
 ];
 
@@ -67,19 +79,11 @@ export default function Machine() {
                   {card.desc}
                 </p>
               </div>
-              <Button variant="outline" className="w-fit">
-                Explore
+              <Button variant="outline" className="w-fit" asChild>
+                <Link href={card.href}>Explore</Link>
               </Button>
             </div>
           ))}
-          <div className="bg-[#F5F5F6] p-6 flex items-center justify-center min-h-[220px]">
-            <button className="section-description-semi text-[#3A3A3F] flex items-center gap-2 group">
-              Explore Our Solutions and Services
-              <span className="inline-block group-hover:translate-x-1 transition-transform">
-                →
-              </span>
-            </button>
-          </div>
         </div>
       </div>
     </section>

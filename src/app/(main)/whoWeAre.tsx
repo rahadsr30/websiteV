@@ -102,7 +102,7 @@ export default function WhoWeAre() {
                 </div>
 
                 <a
-                  href="#about"
+                  href="/about"
                   className="text-[#0A0A0B] md:text-white flex items-center gap-2 font-medium hover:underline"
                 >
                   About Us <span className="inline-block">→</span>

@@ -71,8 +71,8 @@ const navLinks = [
     dropdownItems: [
       { href: "/contact", label: "Contact" },
       { href: "/about", label: "About Us" },
-      { href: "/careers", label: "Careers" },
-      { href: "/blog", label: "Blog" },
+      // { href: "/careers", label: "Careers" },
+      // { href: "/blog", label: "Blog" },
     ],
   },
 ];
@@ -145,7 +145,9 @@ export function Navbar() {
         </div>
 
         <div className="hidden lg:flex items-center">
-          <Button>Get Your Free Strategy Call</Button>
+          <Button asChild>
+            <Link href="/contact">Get Your Free Strategy Call</Link>
+          </Button>
         </div>
 
         {/* Mobile Menu Button */}
@@ -210,7 +212,11 @@ export function Navbar() {
             </div>
           ))}
           <div className="items-center w-full mt-4">
-            <Button className="w-full">Get Your Free Strategy Call</Button>
+            <Button className="w-full" asChild>
+              <Link href="/contact" onClick={() => setIsOpen(false)}>
+                Get Your Free Strategy Call
+              </Link>
+            </Button>
           </div>
         </div>
       )}

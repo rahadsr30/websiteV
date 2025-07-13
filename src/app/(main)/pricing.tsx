@@ -1,6 +1,6 @@
 "use client";
 import { Button } from "@/components/ui/button";
-import React from "react";
+import Link from "next/link";
 
 const plans = [
   {
@@ -83,7 +83,9 @@ export default function Pricing() {
                   </li>
                 ))}
               </ul>
-              <Button className="w-full mt-auto">Get Started</Button>
+              <Button className="w-full mt-auto" asChild>
+                <Link href="/contact">Get Started</Link>
+              </Button>
             </div>
           ))}
         </div>

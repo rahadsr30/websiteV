@@ -4,6 +4,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import heroImage from "@/assets/VheroImage.png";
 import { Mic } from "lucide-react";
+import Link from "next/link";
 
 export default function Hero() {
   const [isListening, setIsListening] = useState(false);
@@ -32,7 +33,9 @@ export default function Hero() {
               </div>
 
               <div className="border-t-4 border-white bg-[#F9F9F9] px-5 lg:px-10 py-6 lg:py-16">
-                <Button>Get Your Free Strategy Call</Button>
+                <Button asChild>
+                  <Link href="/contact">Get Your Free Strategy Call</Link>
+                </Button>
               </div>
             </div>
             <div className="col-span-1 lg:col-span-3 bg-[#F9F9F9] py-6 lg:pb-16 px-5 lg:px-6 border-t-4 lg:border-t-0 lg:border-l-4 border-white flex flex-col justify-end">

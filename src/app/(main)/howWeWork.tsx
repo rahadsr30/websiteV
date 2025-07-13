@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import iconnn2 from "@/assets/iconnn2.png";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const steps = [
   {
@@ -35,7 +36,9 @@ export default function HowWeWork() {
             </h2>
           </div>
           <div className="mt-3 md:mt-0">
-            <Button>Book Your Strategy Session</Button>
+            <Button asChild>
+              <Link href="/contact">Book Your Strategy Session</Link>
+            </Button>
           </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1">

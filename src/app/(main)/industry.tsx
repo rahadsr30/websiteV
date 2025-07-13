@@ -8,6 +8,7 @@ import industry4 from "@/assets/industry/Finance.png";
 import industry5 from "@/assets/industry/E-Commerce.png";
 import industry6 from "@/assets/industry/Manufacturing.png";
 import Marquee from "react-fast-marquee";
+import Link from "next/link";
 
 const industries = [
   {
@@ -56,7 +57,9 @@ export default function Industry() {
           <h2 className="section-title-medium text-[#0A0A0B]">
             One Engine. Any <br /> Industry.
           </h2>
-          <Button className="mt-3 md:mt-0">Explore Industries</Button>
+          <Button className="mt-3 md:mt-0">
+            <Link href="/industries">Explore Industries</Link>
+          </Button>
         </div>
 
         <div className="relative overflow-hidden">
