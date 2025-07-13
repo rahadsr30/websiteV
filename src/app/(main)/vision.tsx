@@ -1,12 +1,26 @@
 "use client";
 import { Button } from "@/components/ui/button";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import PhoneInput from "react-phone-number-input";
 import "react-phone-number-input/style.css";
 
 export default function Vision() {
   const [activeTab, setActiveTab] = useState("quote");
   const [phoneNumber, setPhoneNumber] = useState<string | undefined>("+1");
+
+  // Load Calendly script only when call tab is active
+  useEffect(() => {
+    if (activeTab === "call") {
+      const existingScript = document.querySelector("#calendly-script");
+      if (!existingScript) {
+        const script = document.createElement("script");
+        script.id = "calendly-script";
+        script.src = "https://assets.calendly.com/assets/external/widget.js";
+        script.async = true;
+        document.body.appendChild(script);
+      }
+    }
+  }, [activeTab]);
 
   return (
     <section className="py-section">
@@ -129,13 +143,12 @@ export default function Vision() {
           )}
 
           {activeTab === "call" && (
-            <div className="p-20 text-center">
-              <h3 className="text-xl font-medium text-gray-600 mb-4">
-                Book a Call
-              </h3>
-              <p className="text-gray-500">
-                Calendly integration coming soon...
-              </p>
+            <div className="bg-[#F5F5F6] p-6">
+              <div
+                className="calendly-inline-widget"
+                data-url="https://calendly.com/vsenk/discovery-call"
+                style={{ minWidth: "320px", height: "630px", width: "100%" }}
+              ></div>
             </div>
           )}
         </div>
