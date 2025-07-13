@@ -1,12 +1,8 @@
-import Script from "next/script";
+import CalendlyEmbed from "@/components/CalendlyEmbed";
 
 export default function ContactPage() {
   return (
     <section className="py-section">
-      <Script
-        type="text/javascript"
-        src="https://assets.calendly.com/assets/external/widget.js"
-      />
       <div className="wrapper">
         <div className="flex flex-wrap justify-between items-start mb-8 lg:mb-16">
           <div>
@@ -21,11 +17,7 @@ export default function ContactPage() {
         </div>
 
         {/*  */}
-        <div
-          className="calendly-inline-widget"
-          data-url="https://calendly.com/vsenk/discovery-call"
-          style={{ minWidth: "500px", height: "700px" }}
-        ></div>
+        <CalendlyEmbed url="https://calendly.com/vsenk/discovery-call" />
       </div>
     </section>
   );

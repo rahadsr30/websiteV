@@ -7,6 +7,7 @@ import aboutImage2 from "@/assets/service.png";
 import aboutImage3 from "@/assets/about/about1.jpg";
 import aboutImage5 from "@/assets/industry/hcasestudy3.png";
 import aboutImage6 from "@/assets/about/about2.jpg";
+import Link from "next/link";
 
 const aboutus = [
   {
@@ -106,7 +107,9 @@ export default function Page() {
               strategists who believe AI should be useful, human-centered, and
               built to deliver actual results.
             </p>
-            <Button className="mt-6 lg:mt-10">Talk to Our Team</Button>
+            <Button className="mt-6 lg:mt-10">
+              <Link href="/contact">Talk to Our Team</Link>
+            </Button>
           </div>
           <div>
             <Image
