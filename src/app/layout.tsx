@@ -10,6 +10,10 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Vsenk",
   description: "AI Automation Development Agency",
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 export default function RootLayout({
